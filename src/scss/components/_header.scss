@@ -1,0 +1,13 @@
+/* Header ohmyfood */
+/* Mobile First */
+
+@use '../abstracts/' as *; 
+@use '../base/' as *; 
+
+
+header{
+    width: 100%;
+    height: 50px;
+    @include flex-2center;
+    @include shadow-light-down;
+}

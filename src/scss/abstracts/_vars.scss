@@ -1,0 +1,32 @@
+/* Colors Library */
+$colour-mediumPurple : #9356DC;
+$colour-reddishMagenta : #FF79DA;
+$colour-greenishCyan : #99E2D0;
+
+
+/* Fonts  */
+
+    /* & Style */
+    $ffamily-shrikhand : 'Shrikhand', cursive;
+    $ffamily-roboto : 'Roboto', sans-serif;
+
+    /* & Size */
+    $font-size:(
+        "large" : 44px,
+        "mlarge" : 32px,
+        "medium" : 28px, 
+        "smedium" : 18px,
+        "small" : 12px
+    );
+
+    /* & Weight */
+    $font-weight:(
+    "xbold" : 900,
+    "bold" : 700,
+    "mediumbold" : 500,
+    "medium" : 400,
+    "light" : 300,
+    "xlight" : 100
+    );
+    
+

@@ -5,13 +5,8 @@
 *.doc
 *.json
 /node_modules/
-/src
 
-#No auto generated sass/scss files
-*.map
-
-
-
-
+# No mock-up files
+src/mock-up
 
 

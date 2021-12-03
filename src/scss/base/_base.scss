@@ -1,0 +1,29 @@
+@use '../abstracts/vars' as *;
+
+*{
+    font-family: $ffamily-roboto;
+
+}
+h1, h2, h3, h4, .title {
+    font-family: $ffamily-shrikhand;
+}
+
+.header__logo, title{
+    font-size: map-get($font-size, "mlarge");
+}
+
+h1{
+    font-size: map-get($font-size, "large");
+}
+
+h2{
+    font-size: map-get($font-size, "mlarge");
+}
+
+h3{
+    font-size: map-get($font-size, "medium");
+}
+
+h4{
+    font-size: map-get($font-size, "smedium");
+}
