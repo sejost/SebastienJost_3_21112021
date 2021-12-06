@@ -1,29 +1,57 @@
-@use '../abstracts/vars' as *;
+@use '../abstracts/' as *; 
 
 *{
     font-family: $ffamily-roboto;
-
+    font-weight: map-get($map: $font-weight, $key: normal);
 }
-h1, h2, h3, h4, .title {
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    @include flex-column;
+}
+
+h1, h2, h3, h4 {
     font-family: $ffamily-shrikhand;
 }
 
-.header__logo, title{
+.title{
+    font-family: $ffamily-shrikhand;
     font-size: map-get($font-size, "mlarge");
+    &__footer{
+        font-family: $ffamily-shrikhand;
+        font-size: map-get($font-size, "small");
+    }
+    
 }
 
 h1{
-    font-size: map-get($font-size, "large");
+    font-size: map-get($font-size, "xlarge");
 }
 
 h2{
-    font-size: map-get($font-size, "mlarge");
+    font-size: map-get($font-size, "large");
 }
 
 h3{
-    font-size: map-get($font-size, "medium");
+    font-size: map-get($font-size, "smedium");
 }
 
 h4{
-    font-size: map-get($font-size, "smedium");
+    font-size: map-get($font-size, "medium");
+}
+
+a, p {
+    font-size: map-get($font-size, "small");
+}
+
+.link{
+    @include padding-vertical(small)
+}
+
+.fas{
+    width: 30px;
 }

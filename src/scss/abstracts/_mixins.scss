@@ -6,6 +6,11 @@
     justify-content: center;
 }
 
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin shadow-light-down {
     box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.4);
 }
@@ -15,4 +20,17 @@
     @media only screen and (min-width: $bp) {
         @content;
     }
+}
+
+@mixin padding-all($size) {
+    padding: map-get($paddings-all, $size);
+}
+
+@mixin padding-horizontal($size) {
+    padding-left:  map-get($paddings-horizonntal, $size);
+    padding-right: map-get($paddings-horizonntal, $size);
+}
+@mixin padding-vertical($size) {
+    padding-top:  map-get($paddings-vertical, $size);
+    padding-bottom: map-get($paddings-vertical, $size);
 }
