@@ -22,7 +22,6 @@ h1, h2, h3, h4 {
     font-family: $ffamily-shrikhand;
     font-size: map-get($font-size, "mlarge");
     &__footer{
-        font-family: $ffamily-shrikhand;
         font-size: map-get($font-size, "small");
     }
     
