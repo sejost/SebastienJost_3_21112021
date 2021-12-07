@@ -6,8 +6,9 @@
 
 form{
     @include flex-2center;
-    background:$colour-lightGrey;
+    //background:$colour-darkGrey-l10;
     height: 40px;
+    background: fade-out($colour-darkGrey, 0.90);
 }
 
 .locate__button{
