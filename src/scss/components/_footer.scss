@@ -5,7 +5,7 @@
 @use '../base/' as *; 
 
 footer{
-    background: $colour-darkishGrey;
+    background: $colour-darkGrey;
     margin-top: auto;
     @include padding-all(large);
     @include flex-column;

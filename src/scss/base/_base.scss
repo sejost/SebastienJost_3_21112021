@@ -54,3 +54,12 @@ a, p {
 .fas{
     width: 30px;
 }
+
+input{
+    border: none;
+    background: none;
+    width: 120px;
+    &:focus{
+        outline: 0px solid $colour-greenishCyan;
+    }
+}

@@ -1,0 +1,15 @@
+/* Footer ohmyfood */
+/* Mobile First */
+
+@use '../abstracts/' as *; 
+@use '../base/' as *; 
+
+form{
+    @include flex-2center;
+    background:$colour-lightGrey;
+    height: 40px;
+}
+
+.locate__button{
+    cursor: pointer;
+}
