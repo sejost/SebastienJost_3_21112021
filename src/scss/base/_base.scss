@@ -16,6 +16,7 @@ body{
 
 h1, h2, h3, h4 {
     font-family: $ffamily-roboto;
+    margin-bottom: 20px;
 }
 
 .title{
@@ -57,31 +58,18 @@ a, p {
     @include padding-vertical(small)
 }
 
-.icon{
-    width: 30px;
+.bggrey{
+    background: $colour-darkGrey;
 }
 
-.grey-1{
+.bggrey--fo1{
     background: fade-out($colour-darkGrey, 0.80);
 }
 
-.grey-2{
+.bggrey--fo2{
     background: fade-out($colour-darkGrey, 0.92)
 }
 
-.grey-3{
+.bggrey--fo3{
     background: fade-out($colour-darkGrey, 0.96)
 }
-
-input{
-    border: none;
-    background: none;
-    &__text{
-    width: 120px;
-    }
-    &:focus{
-        outline: none;
-    }
-    
-}
-

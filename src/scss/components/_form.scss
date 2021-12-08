@@ -7,16 +7,16 @@
 form{
     @include flex-column;
     .locate__part1{
-        @include flex-2center;
+        @include flex-center;
         height: 40px;
         text-align: center;
-        .locate__icon{
+        .icon__locate{
             cursor: pointer;
         }
     }
     .locate__part2 {
         @include flex-column;
-        @include flex-2center;
+        @include flex-center;
         justify-content: space-around;
         padding-top: 6%;
         padding-bottom: 6%;
