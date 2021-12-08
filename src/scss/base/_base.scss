@@ -15,7 +15,7 @@ body{
 }
 
 h1, h2, h3, h4 {
-    font-family: $ffamily-shrikhand;
+    font-family: $ffamily-roboto;
 }
 
 .title{
@@ -29,37 +29,59 @@ h1, h2, h3, h4 {
 
 h1{
     font-size: map-get($font-size, "xlarge");
+    font-weight: map-get($font-weight, "xbold" );
 }
 
 h2{
     font-size: map-get($font-size, "large");
+    font-weight: map-get($font-weight, "xbold" );
 }
 
 h3{
     font-size: map-get($font-size, "smedium");
+    font-weight: map-get($font-weight, "bold" );
 }
 
 h4{
     font-size: map-get($font-size, "medium");
+    font-weight: map-get($font-weight, "mediumbold" );
 }
 
 a, p {
+    font-family: $ffamily-roboto;
     font-size: map-get($font-size, "small");
+    font-weight: map-get($font-weight, "xlight" );
 }
 
 .link{
     @include padding-vertical(small)
 }
 
-.fas{
+.icon{
     width: 30px;
+}
+
+.grey-1{
+    background: fade-out($colour-darkGrey, 0.80);
+}
+
+.grey-2{
+    background: fade-out($colour-darkGrey, 0.92)
+}
+
+.grey-3{
+    background: fade-out($colour-darkGrey, 0.96)
 }
 
 input{
     border: none;
     background: none;
+    &__text{
     width: 120px;
-    &:focus{
-        outline: 0px solid $colour-greenishCyan;
     }
+    &:focus{
+        outline: none;
+    }
+    
 }
+

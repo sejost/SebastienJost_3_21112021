@@ -6,13 +6,23 @@
     justify-content: center;
 }
 
+@mixin flex-horicenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-verticenter {
+    display: flex;
+    align-items: center;
+}
+
 @mixin flex-column {
     display: flex;
     flex-direction: column;
 }
 
 @mixin shadow-light-down {
-    box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.3);
 }
 
 @mixin respond($device) {

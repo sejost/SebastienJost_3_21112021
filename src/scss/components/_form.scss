@@ -1,16 +1,48 @@
-/* Footer ohmyfood */
+/* Form ohmyfood */
 /* Mobile First */
 
 @use '../abstracts/' as *; 
 @use '../base/' as *; 
 
 form{
-    @include flex-2center;
-    //background:$colour-darkGrey-l10;
-    height: 40px;
-    background: fade-out($colour-darkGrey, 0.90);
+    @include flex-column;
+    .locate__part1{
+        @include flex-2center;
+        height: 40px;
+        text-align: center;
+        .locate__icon{
+            cursor: pointer;
+        }
+    }
+    .locate__part2 {
+        @include flex-column;
+        @include flex-2center;
+        justify-content: space-around;
+        padding-top: 6%;
+        padding-bottom: 6%;
+        height: 180px;
+        text-align: center;
+        h3, input{
+            margin-right: 25%;
+            margin-left: 25%;
+        }
+        p {
+            margin-right: 15%;
+            margin-left: 15%;
+        }
+    }
 }
 
-.locate__button{
-    cursor: pointer;
+.input__text{
+    max-width: 120px;
+    text-align: center;
 }
+
+input{
+    border: none;
+    background: none;
+    &:focus{
+        outline: none;
+    }
+}
+

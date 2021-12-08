@@ -1,0 +1,14 @@
+/* Buttons ohmyfood */
+
+@use '../abstracts/' as *; 
+@use '../base/' as *;
+
+.button {
+    background: linear-gradient(175deg, $colour-reddishMagenta 0%, $colour-mediumPurple 100%);
+    border-radius: 20px;
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+    color: white;
+    @include shadow-light-down;
+}
