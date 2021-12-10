@@ -10,6 +10,11 @@
     justify-content: space-around;
     align-items: center;
     padding: 2rem 0;
+    @include respond(tablet){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 .card{
@@ -25,6 +30,12 @@
         width: 95%;
         height: 4rem;
         counter-increment: card-list;
+        @include respond(tablet){
+            width: 40%;
+        }
+        @include respond(desktop){
+            width: 22rem;
+        }
         &::before{
             content: counter(card-list);
             @include flex-center;
@@ -44,6 +55,12 @@
         overflow: hidden;
         h1, h2, h3, h4 {
             padding-bottom: 1rem;
+        }
+        @include respond(tablet){
+            width: 45%;
+        }
+        @include respond(desktop){
+            width: 24%;
         }
     }
     &__img{

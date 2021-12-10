@@ -34,12 +34,13 @@ $colour-darkGrey : #353535;
     
 /* Breakpoints */
 $breakpoints: (
-    "large-phone": 575px,
+    "large-phone": 574px,
     "tablet": 767px,
     "desktop": 991px,
+    "large-desktop": 1365px,
 );
 
-/* Paddings */
+/* Paddings 
 $paddings-all : (
     "small" : 5px 2% 10px 2%,
     "medium" : 10px 4% 15px 4%,
@@ -56,4 +57,4 @@ $paddings-horizonntal : (
     "small" : 2%,
     "medium" : 4%,
     "large" : 16%,
-);
+);*/

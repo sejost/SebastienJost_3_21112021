@@ -47,10 +47,10 @@ h4{
     font-weight: map-get($font-weight, "mediumbold" );
 }
 
-a, p, span {
+a, p, span, input {
     font-family: $ffamily-roboto;
     font-size: map-get($font-size, "small");
-    font-weight: map-get($font-weight, "xlight" );
+    font-weight: map-get($font-weight, "light" );
 }
 
 img{
@@ -88,5 +88,11 @@ section, .section{
     padding: 2rem 1.125rem;
     &--short{
         padding: 2rem 3rem;
+        }
+    @include respond(tablet){
+        padding: 3rem 4rem;
+    }
+    @include respond(large-desktop){
+        padding: 3rem 5rem;
     }
 }
