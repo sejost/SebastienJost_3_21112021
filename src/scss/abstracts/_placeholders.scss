@@ -1,5 +1,7 @@
 /* Placeholders ohmyfood */
 
+@use 'vars' as *; 
+
 %border-radius1{
     border-radius: 1rem;
 }
@@ -10,4 +12,27 @@
 
 %border-radius3{
     border-radius: 2rem;
+}
+
+.bg__grey{
+    background: $colour-darkGrey;
+}
+
+.bg__greyfo1{
+    background: fade-out($colour-darkGrey, 0.80);
+}
+
+.bg__greyfo2{
+    background: fade-out($colour-darkGrey, 0.92);
+}
+
+.bg__greyfo3{
+    background: fade-out($colour-darkGrey, 0.96);
+}
+
+.bg--active{
+    background : fade-out($colour-mediumPurple , 0.82);
+    &>.icon__card{
+        color: $colour-mediumPurple;
+    }
 }
