@@ -36,6 +36,9 @@
         @include respond(desktop){
             width: 22rem;
         }
+        @include respond(large-desktop){
+            width: 24rem;
+        }
         &::before{
             content: counter(card-list);
             @include flex-center;
