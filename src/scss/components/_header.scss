@@ -6,9 +6,7 @@
 
 
 header{
-    width: 100%;
-    height: 50px;
+    padding: 1rem 2rem 1rem 2rem;
     @include flex-center;
     @include shadow-light-down;
-
 }

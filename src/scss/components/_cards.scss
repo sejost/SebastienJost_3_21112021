@@ -6,45 +6,58 @@
 
 
 .container__cards{
-    height: 80%;
     @include flex-column;
     justify-content: space-around;
     align-items: center;
+    padding: 2rem 0;
 }
 
 .card{
     @include flex-verticenter;
     @include shadow-light-down;
-    border-radius: 16px;
-    margin: 5% 0 5% 0;
+    @extend %border-radius1;
+    margin: 1rem 0;
+    position: relative;
     &__operation{
-        height: 55px;
-        width: 300px;
-        &:hover{cursor: pointer;}
-        @extend .bggrey--fo2;
+        @extend .bg__greyfo2;
+        @extend %border-radius2;
+        cursor: pointer;
+        width: 95%;
+        height: 4rem;
+        counter-increment: card-list;
+        &::before{
+            content: counter(card-list);
+            @include flex-center;
+            @extend %border-radius3;
+            padding: 0.25rem 0.5rem;
+            background: $colour-mediumPurple;
+            color: white;
+            position: absolute;
+            left: -0.75em;
+        }
     }
     &__restaurant{
         @include flex-column;
         background: white;
-        height: 220px;
-        width: 320px;
-        overflow: hidden;
-    }
-    &__img{
-        height: 70%;
+        height: 15rem;
         width: 100%;
-        &:hover{
-            cursor: pointer;
+        overflow: hidden;
+        h1, h2, h3, h4 {
+            padding-bottom: 1rem;
         }
     }
-    &__text{
+    &__img{
+        height: 10rem;
+        width: 100%;
+        cursor: pointer;
+    }
+    &__bottomctnr{
         @include flex-center;
-        padding: 5%;
+        display: flex;
+        padding: 0.5rem 1rem;
+        height: 100%;
         width: 100%;
         justify-content:space-between;
-    }
-    & > * {
-        font-weight: map-get($font-weight, "mediumbold");
     }
     
 }

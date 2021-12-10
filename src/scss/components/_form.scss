@@ -8,39 +8,31 @@ form{
     @include flex-column;
     .locate__part1{
         @include flex-center;
-        height: 40px;
+        padding: 1rem;
         text-align: center;
-        .icon__locate{
+        .icon__locate:hover{
             cursor: pointer;
+            color: $colour-reddishMagenta;
         }
     }
     .locate__part2 {
         @include flex-column;
         @include flex-center;
         justify-content: space-around;
-        padding-top: 6%;
-        padding-bottom: 6%;
-        height: 180px;
         text-align: center;
-        h3, input{
-            margin-right: 25%;
-            margin-left: 25%;
-        }
-        p {
-            margin-right: 15%;
-            margin-left: 15%;
+        &>*{
+            margin: 1rem 0;
         }
     }
 }
 
 .input__text{
-    max-width: 120px;
     text-align: center;
 }
 
 input{
     border: none;
-    background: none;
+    background: transparent;
     &:focus{
         outline: none;
     }

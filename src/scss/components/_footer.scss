@@ -6,18 +6,18 @@
 
 footer{
     margin-top: auto;
-    @include padding-all(large);
     @include flex-column;
     .title__footer{
-        @include padding-vertical(large);
-        color : white
+        color : white;
+        padding-bottom: 1rem
     }
     .container__links {
         @include flex-column;
-        .link > *{
-            @include padding-vertical(small);
-            color: white;
+        .link{
+            padding : 0.25rem 0;
+            &>*{color: white;}
         }
+        
     }
     
 }
