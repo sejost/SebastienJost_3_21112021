@@ -1,18 +1,50 @@
 /* Cards ohmyfood */
+/* Mobile First */
 
 @use '../abstracts/' as *; 
 @use '../base/' as *;
+
+
+.container__cards{
+    height: 80%;
+    @include flex-column;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .card{
     @include flex-verticenter;
     @include shadow-light-down;
     border-radius: 16px;
-    height: 55px;
-    width: 280px;
+    margin: 5% 0 5% 0;
+    &__operation{
+        height: 55px;
+        width: 300px;
+        &:hover{cursor: pointer;}
+        @extend .bggrey--fo2;
+    }
+    &__restaurant{
+        @include flex-column;
+        background: white;
+        height: 220px;
+        width: 320px;
+        overflow: hidden;
+    }
+    &__img{
+        height: 70%;
+        width: 100%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__text{
+        @include flex-center;
+        padding: 5%;
+        width: 100%;
+        justify-content:space-between;
+    }
     & > * {
         font-weight: map-get($font-weight, "mediumbold");
     }
-    &:hover{
-        cursor: pointer;
-    }
+    
 }
