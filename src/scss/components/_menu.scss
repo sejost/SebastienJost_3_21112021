@@ -4,3 +4,8 @@
 @use '../abstracts/' as *; 
 @use '../base/' as *; 
 
+
+.title__part{
+    @include flex-center;
+    justify-content: space-between;
+}

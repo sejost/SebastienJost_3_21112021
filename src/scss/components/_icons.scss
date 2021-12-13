@@ -7,17 +7,11 @@
     font-size: map-get($font-size , "medium");
     &__return{
         position: absolute;
-        left: 2.5rem;
+        left: 1rem;
         top: 1.5rem;
-        @include respond(tablet){
-            left: 6rem;
-        }
-        @include respond(desktop){
-            left: 10rem;
-        }
-        @include respond(large-desktop){
-            left: 20rem;
-        }
+        @include respond(tablet){left: 4rem;}
+        @include respond(desktop){left: 6rem;}
+        @include respond(large-desktop){left: 10rem;}
     }
     &__card{
         padding: 0 2rem ;

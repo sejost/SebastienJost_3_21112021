@@ -67,20 +67,14 @@ img{
 
 section, .section{
     padding: 2rem 1.125rem;
-    &--short{
-        padding: 2rem 3rem;
-        }
+    &--short{padding: 2rem 3rem;}
     &__menu{
         position: absolute;
         top: 17rem;
         width: 100%;
         border-radius: 2rem 2rem 0 0;
     }
-    @include respond(tablet){
-        padding: 3rem 4rem;
-    }
-    @include respond(large-desktop){
-        padding: 3rem 5rem;
-    }
+    @include respond(tablet){padding: 3rem 4rem;}
+    @include respond(large-desktop){padding: 3rem 5rem;}
 }
 
