@@ -9,4 +9,5 @@ header{
     padding: 1rem 2rem 1rem 2rem;
     @include flex-center;
     @include shadow-light-down;
+    position: relative;
 }

@@ -30,6 +30,10 @@
     background: fade-out($colour-darkGrey, 0.96);
 }
 
+.bg__greyfo4{
+    background: rgb(246, 246, 246);
+}
+
 .bg--active{
     background : fade-out($colour-mediumPurple , 0.82);
     &>.icon__card{

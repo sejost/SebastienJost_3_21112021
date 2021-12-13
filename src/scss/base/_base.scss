@@ -13,6 +13,7 @@ html{
 body{
     min-height: 100%;
     @include flex-column;
+    position: relative;
 }
 
 h1, h2, h3, h4 {
@@ -57,12 +58,24 @@ img{
     object-fit: cover;
 }
 
+.bg__img{
+    height: 15rem;
+    @include respond(tablet){height: 20rem;}
+    @include respond(desktop){height: 30rem;}
+    @include respond(large-desktop){height: 50rem;}
+}
 
 section, .section{
     padding: 2rem 1.125rem;
     &--short{
         padding: 2rem 3rem;
         }
+    &__menu{
+        position: absolute;
+        top: 17rem;
+        width: 100%;
+        border-radius: 2rem 2rem 0 0;
+    }
     @include respond(tablet){
         padding: 3rem 4rem;
     }
@@ -70,3 +83,4 @@ section, .section{
         padding: 3rem 5rem;
     }
 }
+
