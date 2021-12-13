@@ -57,28 +57,6 @@ img{
     object-fit: cover;
 }
 
-.bg__grey{
-    background: $colour-darkGrey;
-}
-
-.bg__greyfo1{
-    background: fade-out($colour-darkGrey, 0.80);
-}
-
-.bg__greyfo2{
-    background: fade-out($colour-darkGrey, 0.92);
-}
-
-.bg__greyfo3{
-    background: fade-out($colour-darkGrey, 0.96);
-}
-
-.bg--active{
-    background : fade-out($colour-mediumPurple , 0.82);
-    &>.icon__card{
-        color: $colour-mediumPurple;
-    }
-}
 
 section, .section{
     padding: 2rem 1.125rem;
