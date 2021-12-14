@@ -1,17 +1,11 @@
-@use '../abstracts/' as *; 
+@use '../2-utils/' as *; 
 
 *{
     box-sizing: border-box;
     font-family: $ffamily-roboto;
-    font-weight: map-get($map: $font-weight, $key: normal);
-}
-
-html{
-    height: 100%;
 }
 
 body{
-    min-height: 100%;
     @include flex-column;
     position: relative;
 }

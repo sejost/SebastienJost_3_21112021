@@ -1,8 +1,8 @@
 /* Cards ohmyfood */
 /* Mobile First */
+@use '../1-base/' as *;
+@use '../2-utils/' as *; 
 
-@use '../abstracts/' as *; 
-@use '../base/' as *;
 
 
 .container__cards{
@@ -25,6 +25,10 @@
         margin-top: 0.25rem;
         background: $colour-greenishCyan;
     }
+}
+
+.container__card__img{
+    width: 100%
 }
 
 .card{

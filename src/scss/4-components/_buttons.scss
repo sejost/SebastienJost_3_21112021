@@ -1,7 +1,7 @@
 /* Buttons ohmyfood */
+@use '../1-base/' as *;
+@use '../2-utils/' as *; 
 
-@use '../abstracts/' as *; 
-@use '../base/' as *;
 
 .container__button{
     @include flex-center;

@@ -1,7 +1,7 @@
 /* Icons ohmyfood */
+@use '../1-base/' as *;
+@use '../2-utils/' as *; 
 
-@use '../abstracts/' as *; 
-@use '../base/' as *;
 
 .icon{
     font-size: map-get($font-size , "medium");
