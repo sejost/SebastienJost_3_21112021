@@ -23,10 +23,12 @@ h1, h2, h3, h4 {
 .title{
     font-family: $ffamily-shrikhand;
     font-size: map-get($font-size, "mlarge");
-    &__footer{
-        font-size: map-get($font-size, "small");
+    &__footer{font-size: map-get($font-size, "small");}
+    &__menu{
+        font-weight: map-get($font-weight, "xlight");
     }
 }
+
 
 h1{
     font-size: map-get($font-size, "xlarge");
@@ -69,12 +71,11 @@ section, .section{
     padding: 2rem 1.125rem;
     &--short{padding: 2rem 3rem;}
     &__menu{
-        position: absolute;
-        top: 17rem;
+        position: relative;
+        margin-top: -2rem;
         width: 100%;
         border-radius: 2rem 2rem 0 0;
     }
     @include respond(tablet){padding: 3rem 4rem;}
     @include respond(large-desktop){padding: 3rem 5rem;}
 }
-

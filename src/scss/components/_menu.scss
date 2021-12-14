@@ -8,4 +8,8 @@
 .title__part{
     @include flex-center;
     justify-content: space-between;
+    padding: 0 2rem 2rem 0rem;
+    .title__part--subtitle{
+        @include flex-column;
+    }
 }

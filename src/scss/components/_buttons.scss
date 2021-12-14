@@ -3,6 +3,10 @@
 @use '../abstracts/' as *; 
 @use '../base/' as *;
 
+.container__button{
+    @include flex-center;
+}
+
 .button {
     @extend %border-radius3;
     @include shadow-light-down;
@@ -11,5 +15,9 @@
     font-size: map-get($font-size, small);
     color: white;
     padding: 1rem;
-   
+    &__menu{
+        padding: 1rem 2rem;
+        margin: 2rem 0;
+    }
 }
+
