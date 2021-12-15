@@ -7,7 +7,8 @@
   @include flex-column;
   justify-content: space-around;
   padding: 2rem 0;
-  &__indesutrction {
+  &__instruction,
+  &__restaurant {
     align-items: center;
     @include respond(tablet) {
       flex-direction: row;
