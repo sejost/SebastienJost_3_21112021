@@ -1,0 +1,20 @@
+/* Menu ohmyfood */
+/* Mobile First */
+@use "../1-base/" as *;
+@use "../2-utils/" as *;
+
+.container-title {
+  @include flex-center;
+  justify-content: space-between;
+  padding: 0 2rem 2rem 0;
+  .title__part--subtitle {
+    @include flex-column;
+  }
+}
+
+.underline {
+  height: 0.2rem;
+  width: 2.5rem;
+  margin-top: 0.25rem;
+  background: $colour-greenishCyan;
+}

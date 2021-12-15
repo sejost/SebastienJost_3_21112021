@@ -1,42 +1,38 @@
 /* Placeholders ohmyfood */
+@use "vars" as *;
 
-@use 'vars' as *; 
-
-%border-radius1{
-    border-radius: 1rem;
+%border-radius1 {
+  border-radius: 1rem;
 }
 
-%border-radius2{
-    border-radius: 1.25rem;
+%border-radius2 {
+  border-radius: 1.25rem;
 }
 
-%border-radius3{
-    border-radius: 2rem;
+%border-radius3 {
+  border-radius: 2rem;
 }
 
-.bg__grey{
-    background: $colour-darkGrey;
+.bg__darkgrey {
+  background: $colour-darkGrey;
 }
 
-.bg__greyfo1{
-    background: fade-out($colour-darkGrey, 0.80);
+.bg__darkgrey--fo1 {
+  background: fade-out($colour-darkGrey, 0.8);
 }
 
-.bg__greyfo2{
-    background: fade-out($colour-darkGrey, 0.92);
+.bg__darkgrey--fo2 {
+  background: fade-out($colour-darkGrey, 0.92);
 }
 
-.bg__greyfo3{
-    background: fade-out($colour-darkGrey, 0.96);
+.bg__drakgrey--fo3 {
+  background: fade-out($colour-darkGrey, 0.96);
 }
 
-.bg__greyfo4{
-    background: rgb(246, 246, 246);
+.bg__lightgrey {
+  background: $colour-lightGrey;
 }
 
-.bg--active{
-    background : fade-out($colour-mediumPurple , 0.82);
-    &>.icon__card{
-        color: $colour-mediumPurple;
-    }
+.bg--active {
+  background: fade-out($colour-mediumPurple, 0.82);
 }

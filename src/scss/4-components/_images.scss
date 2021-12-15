@@ -1,3 +1,24 @@
 /* Buttons ohmyfood */
-@use '../1-base/' as *;
-@use '../2-utils/' as *; 
+@use "../1-base/" as *;
+@use "../2-utils/" as *;
+
+img {
+  object-fit: cover;
+}
+
+.link-img {
+  width: 100%;
+}
+
+.bg__img {
+  height: 15rem;
+  @include respond(tablet) {
+    height: 20rem;
+  }
+  @include respond(desktop) {
+    height: 30rem;
+  }
+  @include respond(large-desktop) {
+    height: 50rem;
+  }
+}

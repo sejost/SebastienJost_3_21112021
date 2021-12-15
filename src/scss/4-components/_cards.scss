@@ -1,115 +1,103 @@
 /* Cards ohmyfood */
 /* Mobile First */
-@use '../1-base/' as *;
-@use '../2-utils/' as *; 
+@use "../1-base/" as *;
+@use "../2-utils/" as *;
 
-
-
-.container__cards{
-    @include flex-column;
-    justify-content: space-around;
+.container-cards {
+  @include flex-column;
+  justify-content: space-around;
+  padding: 2rem 0;
+  &__indesutrction {
     align-items: center;
-    padding: 2rem 0;
-    @include respond(tablet){
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    @include respond(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
+  }
+  &__menu {
+  }
 }
 
-.container__cards__menu{
-    padding: 1rem 0;
-    .underline{
-        height: 0.2rem;
-        width: 2.5rem;
-        margin-top: 0.25rem;
-        background: $colour-greenishCyan;
+.card {
+  @include flex-verticenter;
+  @include shadow-light-down;
+  @extend %border-radius1;
+  margin: 1rem 0;
+  position: relative;
+  height: 4rem;
+  h3 {
+    padding-bottom: 0.5rem;
+  }
+  &__instruction {
+    cursor: pointer;
+    width: 95%;
+    counter-increment: card-list;
+    @include respond(tablet) {
+      width: 20rem;
     }
+    @include respond(desktop) {
+      width: 22rem;
+    }
+    @include respond(large-desktop) {
+      width: 24rem;
+    }
+    &::before {
+      content: counter(card-list);
+      @include flex-center;
+      @extend %border-radius3;
+      padding: 0.25rem 0.5rem;
+      background: $colour-mediumPurple;
+      color: white;
+      position: absolute;
+      left: -0.75em;
+    }
+  }
+  &__restaurant {
+    @include flex-column;
+    background: white;
+    height: 15rem;
+    width: 100%;
+    overflow: hidden;
+
+    @include respond(tablet) {
+      width: 45%;
+    }
+    @include respond(desktop) {
+      height: 20rem;
+    }
+    @include respond(large-desktop) {
+      height: 25rem;
+    }
+  }
+  &__img {
+    height: 10rem;
+    width: 100%;
+    @include respond(desktop) {
+      height: 15rem;
+    }
+    @include respond(large-desktop) {
+      height: 20rem;
+    }
+  }
+  &__lower {
+    @include flex-center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.container__card__img{
-    width: 100%
+.card__menu {
+  @include flex-center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  position: relative;
+  cursor: pointer;
+  .menu__price {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
-
-.card{
-    @include flex-verticenter;
-    @include shadow-light-down;
-    @extend %border-radius1;
-    margin: 1rem 0;
-    position: relative;
-    h3{
-        padding-bottom: 0.5rem
-    }
-    &__operation{
-        @extend .bg__greyfo2;
-        @extend %border-radius2;
-        cursor: pointer;
-        width: 95%;
-        height: 4rem;
-        counter-increment: card-list;
-        @include respond(tablet){
-            width: 40%;
-        }
-        @include respond(desktop){
-            width: 22rem;
-        }
-        @include respond(large-desktop){
-            width: 24rem;
-        }
-        &::before{
-            content: counter(card-list);
-            @include flex-center;
-            @extend %border-radius3;
-            padding: 0.25rem 0.5rem;
-            background: $colour-mediumPurple;
-            color: white;
-            position: absolute;
-            left: -0.75em;
-        }
-    }
-    &__restaurant{
-        @include flex-column;
-        background: white;
-        height: 15rem;
-        width: 100%;
-        overflow: hidden;
-
-        @include respond(tablet){
-            width: 45%;
-        }
-        @include respond(desktop){
-            height: 20rem;
-        }
-        @include respond(large-desktop){
-            height: 25rem;
-        }
-    }
-    &__img{
-        height: 10rem;
-        width: 100%;
-        cursor: pointer;
-        @include respond(desktop){height: 15rem;}
-        @include respond(large-desktop){height: 20rem;}
-    }
-    &__bottomctnr{
-        @include flex-center;
-        justify-content:space-between;
-        padding: 0.5rem 1rem;
-        height: 100%;
-        width: 100%;
-        
-    }
-    &__menu{
-        @include flex-center;
-        justify-content: space-between;
-        padding: 0.75rem;
-        position: relative;
-        cursor: pointer;
-        &__price{
-            position: absolute;
-            right: 1rem;
-            bottom: 1rem;
-        }
-    }
-}
-

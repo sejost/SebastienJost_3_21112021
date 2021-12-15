@@ -1,40 +1,33 @@
 /* Form ohmyfood */
 /* Mobile First */
-@use '../1-base/' as *; 
-@use '../2-utils/' as *; 
+@use "../1-base/" as *;
+@use "../2-utils/" as *;
 
-
-form{
-    @include flex-column;
-    .locate__part1{
-        @include flex-center;
-        padding: 1rem;
-        text-align: center;
-        .icon__locate:hover{
-            cursor: pointer;
-            color: $colour-reddishMagenta;
-        }
-    }
-    .locate__part2 {
-        @include flex-column;
-        @include flex-center;
-        justify-content: space-around;
-        text-align: center;
-        &>*{
-            margin: 1rem 0;
-        }
-    }
+.locate-city {
+  @include flex-center;
+  padding: 1rem;
+  text-align: center;
+}
+.explore-restaurants {
+  @include flex-column;
+  @include flex-center;
+  justify-content: space-around;
+  text-align: center;
+  height: 18rem;
+  padding: 2rem 3rem;
+  @include respond(tablet) {
+    height: 15rem;
+  }
 }
 
-.input__text{
-    text-align: center;
+input {
+  border: none;
+  background: transparent;
+  &:focus {
+    outline: none;
+  }
 }
 
-input{
-    border: none;
-    background: transparent;
-    &:focus{
-        outline: none;
-    }
+.input__text {
+  text-align: center;
 }
-

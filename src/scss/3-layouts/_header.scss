@@ -1,13 +1,10 @@
 /* Header ohmyfood */
 /* Mobile First */
-@use '../1-base/' as *; 
-@use '../2-utils/' as *; 
+@use "../1-base/" as *;
+@use "../2-utils/" as *;
 
-
-
-header{
-    padding: 1rem 2rem 1rem 2rem;
-    @include flex-center;
-    @include shadow-light-down;
-    position: relative;
+.header__container {
+  padding: 1rem 0;
+  @include flex-center;
+  @include shadow-light-down;
 }

@@ -30,41 +30,41 @@
 <body>
 
     <!-- Header Part -->
-    <header>
+    <header class="header__container">
         <a href="#"><h1 class="title title__header">ohmyfood</h1></a>
     </header>
 
     <!-- Form Locate Section -->
-    <form class="locate" action="#" method="post">
-        <div class="locate__part1 bg__greyfo1">
-            <i class="icon icon__locate fas fa-map-marker-alt"></i>
+    <form class="form form__explore" action="#" method="post">
+        <div class="locate-city bg__darkgrey--fo1">
+            <i class="icon icon__locate-city fas fa-map-marker-alt"></i>
             <input class="input__text" placeholder="Paris, Belleville" type="text" name="location" required>
         </div>
-        <div class="locate__part2 section--short bg__greyfo2">
+        <div class="explore-restaurants bg__darkgrey--fo2">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exceptions, sélectionnés par nos soins.</p>
-            <div class="container__button"><input class="button input__button" type="submit" value="Explorer nos restaurants" name="location"></div>
-            
+            <div class="container-buttons"><input class="button input__button" type="submit" value="Explorer nos restaurants" name="location"></div>
         </div>
     </form>
 
-    <!-- Operation Step Section -->
-    <section class="operation">
+    <!-- Instructions' Step Section -->
+    <section class="section section__instructions">
         <h2>Fonctionnement</h2>
-        <div class="container__cards container__cards__operation">
-            <div class="card card__operation">
-                
-                <i class="icon icon__card fas fa-mobile-alt"></i>
+
+        <div class="container-cards container-cards__instructions">
+
+            <div class="card card__instruction bg__darkgrey--fo2">
+                <i class="icon icon__instruction fas fa-mobile-alt"></i>
                 <h4>Choisissez votre restaurant</h4>
             </div>
-            <div class="card card__operation">
-                
-                <i class="icon icon__card far fa-list-alt"></i>
+
+            <div class="card card__instruction bg__darkgrey--fo2">
+                <i class="icon icon__instruction far fa-list-alt"></i>
                 <h4>Composez votre menu</h4>
             </div>
-            <div class="card card__operation bg--active">
-                
-                <i class="icon icon__card fas fa-store"></i>
+
+            <div class="card card__instruction bg--active">
+                <i class="icon icon__instruction fas fa-store"></i>
                 <h4>Dégustez au restaurant</h4>
             </div>
         </div>
@@ -73,70 +73,72 @@
     </section>
 
     <!-- Restaurants' List Section -->
-    <section class="restaurants__list bg__greyfo2">
+    <section class="section section__list bg__darkgrey--fo2">
         <h2>Restaurants</h2>
-        <div class="container__cards container__cards__restaurant">
+        <div class="container-cards container-cards__restaurant">
+
             <!-- Individual Restaurant Card : La palette du goût -->
             <div class="card card__restaurant">
-                <a class="container__card__img" href="menulapalettedugout.html">
+                <a class="link-img" href="menulapalettedugout.html">
                     <img  class="card__img" src="dist/images/images/restaurants/la palette du gout.jpg" alt="La Palette du Goût">
                 </a>
-                <div class="card__bottomctnr">
+                <div class="card__lower">
                     <div class="card__text">
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
                     </div>
-                    <span class="icons__heart">
-                        <i class="icon icon__heart far fa-heart"></i>
-                        <i class="icon icon__heart--filled fas fa-heart"></i>
+                    <span class="container-icons container-icons__restaurant">
+                        <i class="icon icon__restaurant icon__restaurant--empty far fa-heart"></i>
+                        <i class="icon icon__restaurant icon__restaurant--filled fas fa-heart"></i>
                     </span>
                 </div>
             </div>
             <!-- Individual Restaurant Card : La note enchantée -->
             <div class="card card__restaurant">
-                <a class="container__card__img" href="menulanoteenchantee.html">
+                <a class="link-img" href="menulanoteenchantee.html">
                     <img class="card__img" src="dist/images/images/restaurants/la note enchantee.jpg" alt="La Note Enchantée">
                 </a>
-                <div class="card__bottomctnr">
+                <div class="card__lower">
                     <div class="card__text">
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
                     </div>
-                    <span class="icons__heart">
-                        <i class="icon icon__heart far fa-heart"></i>
-                        <i class="icon icon__heart--filled fas fa-heart"></i>
+                    <span class="container-icons container-icons__restaurant">
+                        <i class="icon icon__restaurant icon__restaurant--empty far fa-heart"></i>
+                        <i class="icon icon__restaurant icon__restaurant--filled fas fa-heart"></i>
                     </span>
                 </div>
             </div>
+
             <!-- Individual Restaurant Card : A la française -->
             <div class="card card__restaurant">
-                <a class="container__card__img" href="menualafrancaise.html">
+                <a class="link-img" href="menualafrancaise.html">
                     <img class="card__img" src="dist/images/images/restaurants/a la francaise.jpg" alt="À la Française">
                 </a>
-                <div class="card__bottomctnr">
+                <div class="card__lower">
                     <div class="card__text">
                         <h3>À la française</h3>
                         <p>Cité Rouge</p>
                     </div>
-                    <span class="icons__heart">
-                        <i class="icon icon__heart far fa-heart"></i>
-                        <i class="icon icon__heart--filled fas fa-heart"></i>
+                    <span class="container-icons container-icons__restaurant">
+                        <i class="icon icon__restaurant icon__restaurant--empty far fa-heart"></i>
+                        <i class="icon icon__restaurant icon__restaurant--filled fas fa-heart"></i>
                     </span>
                 </div>
             </div>
             <!-- Individual Restaurant Card : Le délice des sens -->
             <div class="card card__restaurant">
-                <a class="container__card__img" href="menuledelicedessens.html">
+                <a class="link-img" href="menuledelicedessens.html">
                     <img class="card__img" src="dist/images/images/restaurants/le delice des sens.jpg" alt="Le Délice des Sens">
                 </a>
-                <div class="card__bottomctnr">
+                <div class="card__lower">
                     <div class="card__text">
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
                     </div>
-                    <span class="icons__heart">
-                        <i class="icon icon__heart far fa-heart"></i>
-                        <i class="icon icon__heart--filled fas fa-heart"></i>
+                    <span class="container-icons container-icons__restaurant">
+                        <i class="icon icon__restaurant icon__restaurant--empty far fa-heart"></i>
+                        <i class="icon icon__restaurant icon__restaurant--filled fas fa-heart"></i>
                     </span>
                 </div>
             </div>
@@ -145,7 +147,7 @@
 
 
     <!-- Footer Section  -->
-    <footer class="section bg__grey">
+    <footer class="section footer__container bg__darkgrey">
         <a href="#"><h4 class="title title__footer">ohmyfood</h4></a>
         <div class="container__links">
             <div class="link"><i class="icon icon__footer fas fa-utensils"></i><a href="#">Proposer un restaurant</a></div>

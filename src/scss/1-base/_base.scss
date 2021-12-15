@@ -1,75 +1,58 @@
-@use '../2-utils/' as *; 
+@use "../2-utils/" as *;
 
-*{
-    box-sizing: border-box;
-    font-family: $ffamily-roboto;
+* {
+  box-sizing: border-box;
+  font-family: $ffamily-roboto;
 }
 
-body{
-    @include flex-column;
-    position: relative;
+body {
+  @include flex-column;
+  position: relative;
 }
 
-h1, h2, h3, h4 {
-    font-family: $ffamily-roboto;
+h1,
+h2,
+h3,
+h4 {
+  font-family: $ffamily-roboto;
 }
 
-.title{
-    font-family: $ffamily-shrikhand;
-    font-size: map-get($font-size, "mlarge");
-    &__footer{font-size: map-get($font-size, "small");}
-    &__menu{
-        font-weight: map-get($font-weight, "xlight");
-    }
-}
-
-
-h1{
-    font-size: map-get($font-size, "xlarge");
-    font-weight: map-get($font-weight, "bold" );
-}
-
-h2{
-    font-size: map-get($font-size, "large");
-    font-weight: map-get($font-weight, "xbold" );
-}
-
-h3{
-    font-size: map-get($font-size, "smedium");
-    font-weight: map-get($font-weight, "bold" );
-}
-
-h4{
+.title {
+  font-family: $ffamily-shrikhand;
+  font-size: map-get($font-size, "mlarge");
+  &__footer {
     font-size: map-get($font-size, "small");
-    font-weight: map-get($font-weight, "mediumbold" );
+  }
+  &__menu {
+    font-weight: map-get($font-weight, "xlight");
+  }
 }
 
-a, p, span, input {
-    font-family: $ffamily-roboto;
-    font-size: map-get($font-size, "small");
-    font-weight: map-get($font-weight, "light" );
+h1 {
+  font-size: map-get($font-size, "xlarge");
+  font-weight: map-get($font-weight, "bold");
 }
 
-img{
-    object-fit: cover;
+h2 {
+  font-size: map-get($font-size, "large");
+  font-weight: map-get($font-weight, "xbold");
 }
 
-.bg__img{
-    height: 15rem;
-    @include respond(tablet){height: 20rem;}
-    @include respond(desktop){height: 30rem;}
-    @include respond(large-desktop){height: 50rem;}
+h3 {
+  font-size: map-get($font-size, "smedium");
+  font-weight: map-get($font-weight, "bold");
 }
 
-section, .section{
-    padding: 2rem 1.125rem;
-    &--short{padding: 2rem 3rem;}
-    &__menu{
-        position: relative;
-        margin-top: -2rem;
-        width: 100%;
-        border-radius: 2rem 2rem 0 0;
-    }
-    @include respond(tablet){padding: 3rem 4rem;}
-    @include respond(large-desktop){padding: 3rem 5rem;}
+h4 {
+  font-size: map-get($font-size, "small");
+  font-weight: map-get($font-weight, "mediumbold");
+}
+
+a,
+p,
+span,
+input {
+  font-family: $ffamily-roboto;
+  font-size: map-get($font-size, "small");
+  font-weight: map-get($font-weight, "light");
 }

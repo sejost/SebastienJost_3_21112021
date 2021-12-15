@@ -1,43 +1,43 @@
 /* Colors Library */
-$colour-mediumPurple : #9356DC;
-$colour-reddishMagenta : #FF79DA;
-$colour-greenishCyan : #99E2D0;
-$colour-darkGrey : #353535;
-
+$colour-mediumPurple: #9356dc;
+$colour-reddishMagenta: #ff79da;
+$colour-greenishCyan: #99e2d0;
+$colour-darkGrey: #353535;
+$colour-lightGrey: rgb(246, 246, 246);
 
 /* Fonts  */
 
-    /* & Style */
-    $ffamily-shrikhand : 'Shrikhand', cursive;
-    $ffamily-roboto : 'Roboto', sans-serif;
+/* & Style */
+$ffamily-shrikhand: "Shrikhand", cursive;
+$ffamily-roboto: "Roboto", sans-serif;
 
-    /* & Size */
-    $font-size:(
-        "xlarge" : 2rem,
-        "large" : 1.5rem,
-        "medlarge" : 1.25rem,
-        "medium" : 1.125rem, 
-        "smedium" : 1.1rem,
-        "small" : 1rem,
-        "xsmall" : 0.90rem,
-    );
+/* & Size */
+$font-size: (
+  "xlarge": 2rem,
+  "large": 1.5rem,
+  "medlarge": 1.25rem,
+  "medium": 1.125rem,
+  "smedium": 1.1rem,
+  "small": 1rem,
+  "xsmall": 0.9rem,
+);
 
-    /* & Weight */
-    $font-weight:(
-    "xbold" : 900,
-    "bold" : 700,
-    "mediumbold" : 500,
-    "medium" : 400,
-    "light" : 300,
-    "xlight" : 100
-    );
-    
+/* & Weight */
+$font-weight: (
+  "xbold": 900,
+  "bold": 700,
+  "mediumbold": 500,
+  "medium": 400,
+  "light": 300,
+  "xlight": 100,
+);
+
 /* Breakpoints */
 $breakpoints: (
-    "large-phone": 574px,
-    "tablet": 767px,
-    "desktop": 991px,
-    "large-desktop": 1365px,
+  "large-phone": 574px,
+  "tablet": 767px,
+  "desktop": 991px,
+  "large-desktop": 1365px,
 );
 
 /* Paddings 
