@@ -6,7 +6,7 @@
 .container-cards {
   @include flex-column;
   justify-content: space-around;
-  padding: 2rem 0;
+  padding: 1rem 0;
   &__instruction,
   &__restaurant {
     align-items: center;
@@ -16,8 +16,10 @@
       justify-content: space-around;
     }
   }
-  &__menu {
-  }
+}
+
+.subcontainer-cards {
+  padding: 0.5rem 0;
 }
 
 .card {
@@ -81,24 +83,21 @@
       height: 20rem;
     }
   }
-  &__lower {
+  &__details {
     @include flex-center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem;
     height: 100%;
     width: 100%;
+    position: relative;
+    .menu__price {
+      font-weight: map-get($font-weight, bold);
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+    }
   }
-}
-
-.card__menu {
-  @include flex-center;
-  justify-content: space-between;
-  padding: 0.75rem;
-  position: relative;
-  cursor: pointer;
-  .menu__price {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
+  &__dish {
+    cursor: pointer;
   }
 }
