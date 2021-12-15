@@ -7,7 +7,7 @@
 }
 
 .icon {
-  font-size: map-get($font-size, "medium");
+  font-size: map-get($font-size, "medlarge");
   &__locate-city:hover {
     cursor: pointer;
     color: $colour-reddishMagenta;
