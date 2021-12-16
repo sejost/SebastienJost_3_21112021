@@ -6,5 +6,5 @@
 .header__container {
   padding: 1rem 0;
   @include flex-center;
-  @include shadow-light-down;
+  @include shadow-box;
 }

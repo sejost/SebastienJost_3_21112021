@@ -25,17 +25,23 @@
   width: 100%;
   &__menu {
     @include respond(tablet) {
-      width: 23rem;
+      width: 70%;
     }
     @include respond(desktop) {
-      width: 25rem;
+      width: 45%;
+    }
+    @include respond(med-desktop) {
+      //width: 30%;
+    }
+    @include respond(large-desktop) {
+      width: 30%;
     }
   }
 }
 
 .card {
   @include flex-verticenter;
-  @include shadow-light-down;
+  @include shadow-box;
   @extend %border-radius1;
   margin: 1rem 0;
   position: relative;
@@ -53,8 +59,11 @@
     @include respond(desktop) {
       width: 22rem;
     }
-    @include respond(large-desktop) {
+    @include respond(med-desktop) {
       width: 24rem;
+    }
+    @include respond(med-desktop) {
+      width: 26rem;
     }
     &::before {
       content: counter(card-list);
@@ -76,14 +85,13 @@
     height: 15rem;
     width: 100%;
     overflow: hidden;
-
     @include respond(tablet) {
       width: 45%;
     }
     @include respond(desktop) {
       height: 20rem;
     }
-    @include respond(large-desktop) {
+    @include respond(med-desktop) {
       height: 25rem;
     }
   }
@@ -93,7 +101,7 @@
     @include respond(desktop) {
       height: 15rem;
     }
-    @include respond(large-desktop) {
+    @include respond(med-desktop) {
       height: 20rem;
     }
   }
@@ -105,15 +113,23 @@
     width: 100%;
     position: relative;
   }
-  &__menu {
-    @include respond(tablet) {
-      cursor: pointer;
-    }
-    .menu__price {
-      font-weight: map-get($font-weight, bold);
-      position: absolute;
-      right: 1rem;
-      bottom: 1rem;
-    }
+}
+
+.card__menu {
+  @include respond(tablet) {
+    cursor: pointer;
   }
+  .menu__description {
+    padding-right: 2.5rem;
+  }
+  .menu__price {
+    font-weight: map-get($font-weight, bold);
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+.card:hover {
+  @include shadow-box-over;
 }

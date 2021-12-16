@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   font-family: $ffamily-roboto;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -19,33 +20,44 @@ h4 {
 
 .title {
   font-family: $ffamily-shrikhand;
-  font-size: map-get($font-size, "mlarge");
-  &__footer {
-    font-size: map-get($font-size, "small");
-  }
-  &__menu {
-    font-weight: map-get($font-weight, "xlight");
-  }
 }
 
 h1 {
-  font-size: map-get($font-size, "xlarge");
+  font-size: map-get($font-size, "large");
   font-weight: map-get($font-weight, "bold");
+  @include respond(tablet) {
+    font-size: map-get($font-size, "xlarge");
+  }
 }
 
 h2 {
-  font-size: map-get($font-size, "large");
+  font-size: map-get($font-size, "medlarge");
   font-weight: map-get($font-weight, "xbold");
+  @include respond(tablet) {
+    font-size: map-get($font-size, "large");
+  }
 }
 
 h3 {
   font-size: map-get($font-size, "smedium");
   font-weight: map-get($font-weight, "bold");
+  @include respond(tablet) {
+    font-size: map-get($font-size, "medium");
+  }
+  @include respond(desktop) {
+    font-size: map-get($font-size, "medlarge");
+  }
 }
 
 h4 {
   font-size: map-get($font-size, "small");
   font-weight: map-get($font-weight, "mediumbold");
+  @include respond(tablet) {
+    font-size: map-get($font-size, "smedium");
+  }
+  @include respond(desktop) {
+    font-size: map-get($font-size, "medium");
+  }
 }
 
 a,
@@ -55,7 +67,17 @@ input {
   font-family: $ffamily-roboto;
   font-size: map-get($font-size, "small");
   font-weight: map-get($font-weight, "light");
-  @include respond(desktop) {
+  @include respond(tablet) {
     font-size: map-get($font-size, "medium");
   }
+  @include respond(desktop) {
+    font-size: map-get($font-size, "medlarge");
+  }
+}
+
+a:hover,
+a:hover > *,
+.link:hover,
+.link:hover > * {
+  @include text-gradient;
 }

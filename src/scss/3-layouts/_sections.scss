@@ -8,7 +8,7 @@
   @include respond(tablet) {
     padding: 3rem 4rem;
   }
-  @include respond(large-desktop) {
+  @include respond(med-desktop) {
     padding: 3rem 5rem;
   }
   &__menu {

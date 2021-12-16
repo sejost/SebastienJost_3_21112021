@@ -8,18 +8,27 @@
 
 .button {
   @extend %border-radius3;
-  @include shadow-light-down;
+  @include shadow-box;
+  @include background-gradient;
+  background-size: 300%;
+  background-position: center;
   cursor: pointer;
-  background: linear-gradient(
-    175deg,
-    $colour-reddishMagenta 0%,
-    $colour-mediumPurple 100%
-  );
   font-size: map-get($font-size, small);
   color: white;
   padding: 1rem;
+  @include respond(tablet) {
+    font-size: map-get($font-size, "smedium");
+  }
+  @include respond(desktop) {
+    font-size: map-get($font-size, "medium");
+  }
   &__menu {
     padding: 1rem 2rem;
     margin: 2rem 0;
   }
+}
+
+.button:hover {
+  background-position: left;
+  @include shadow-box-over;
 }

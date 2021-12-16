@@ -22,7 +22,7 @@
     @include respond(desktop) {
       left: 6rem;
     }
-    @include respond(large-desktop) {
+    @include respond(med-desktop) {
       left: 10rem;
     }
   }
