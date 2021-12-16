@@ -60,16 +60,19 @@
       content: counter(card-list);
       @include flex-center;
       @extend %border-radius3;
-      padding: 0.25rem 0.5rem;
+      padding: 0.5rem 0.75rem;
       background: $colour-mediumPurple;
       color: white;
       position: absolute;
-      left: -0.75em;
+      left: -1rem;
     }
+  }
+  &__restaurant,
+  &__menu {
+    background: white;
   }
   &__restaurant {
     @include flex-column;
-    background: white;
     height: 15rem;
     width: 100%;
     overflow: hidden;
