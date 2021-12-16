@@ -5,16 +5,15 @@
 
 .section {
   padding: 2rem 1.125rem;
-  &__menu {
-    position: relative;
-    margin-top: -2rem;
-    //width: 100%;
-    border-radius: 2rem 2rem 0 0;
-  }
   @include respond(tablet) {
     padding: 3rem 4rem;
   }
   @include respond(large-desktop) {
     padding: 3rem 5rem;
+  }
+  &__menu {
+    position: relative;
+    margin-top: -2rem;
+    border-radius: 2rem 2rem 0 0;
   }
 }

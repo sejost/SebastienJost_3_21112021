@@ -55,4 +55,7 @@ input {
   font-family: $ffamily-roboto;
   font-size: map-get($font-size, "small");
   font-weight: map-get($font-weight, "light");
+  @include respond(desktop) {
+    font-size: map-get($font-size, "medium");
+  }
 }

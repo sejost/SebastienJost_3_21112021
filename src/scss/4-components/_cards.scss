@@ -8,18 +8,29 @@
   justify-content: space-around;
   padding: 1rem 0;
   &__instruction,
-  &__restaurant {
+  &__restaurant,
+  &__menu {
     align-items: center;
     @include respond(tablet) {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
+      align-items: baseline;
     }
   }
 }
 
 .subcontainer-cards {
   padding: 0.5rem 0;
+  width: 100%;
+  &__menu {
+    @include respond(tablet) {
+      width: 23rem;
+    }
+    @include respond(desktop) {
+      width: 25rem;
+    }
+  }
 }
 
 .card {
@@ -90,14 +101,16 @@
     height: 100%;
     width: 100%;
     position: relative;
+  }
+  &__menu {
+    @include respond(tablet) {
+      cursor: pointer;
+    }
     .menu__price {
       font-weight: map-get($font-weight, bold);
       position: absolute;
       right: 1rem;
       bottom: 1rem;
     }
-  }
-  &__dish {
-    cursor: pointer;
   }
 }
