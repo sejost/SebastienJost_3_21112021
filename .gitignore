@@ -5,6 +5,7 @@
 *.doc
 *.json
 /node_modules/
+/test
 
 # No mock-up files
 src/mock-up

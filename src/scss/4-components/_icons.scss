@@ -52,7 +52,8 @@
   }
 }
 
-.container-icons:hover {
+.container-icons:hover,
+.container-icons:active {
   cursor: pointer;
   .icon__restaurant {
     &--empty {

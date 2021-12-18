@@ -94,6 +94,10 @@
     @include respond(med-desktop) {
       height: 25rem;
     }
+    @include respond(large-desktop) {
+      height: 26rem;
+      width: 23%;
+    }
   }
   &__img {
     height: 10rem;
