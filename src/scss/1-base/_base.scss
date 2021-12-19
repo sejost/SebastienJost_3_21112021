@@ -2,8 +2,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: $ffamily-roboto;
-  transition: all 0.3s ease;
 }
 
 body {
@@ -73,11 +71,4 @@ input {
   @include respond(desktop) {
     font-size: map-get($font-size, "medlarge");
   }
-}
-
-a:hover,
-a:hover > *,
-.link:hover,
-.link:hover > * {
-  @include text-gradient;
 }

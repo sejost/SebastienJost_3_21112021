@@ -68,3 +68,24 @@
     @content;
   }
 }
+
+@mixin transition($props...) {
+  $result: ();
+
+  @for $i from 1 through length($props) {
+    $prop: nth($props, $i);
+    $result: append($result, $prop);
+    $result: append($result, ease-in-out 0.2s);
+
+    @if $i != length($props) {
+      $result: append(
+        $result,
+        unquote(
+          $string: ",",
+        )
+      );
+    }
+  }
+
+  transition: $result;
+}

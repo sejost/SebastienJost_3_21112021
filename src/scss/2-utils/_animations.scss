@@ -1,0 +1,34 @@
+@use "vars" as *;
+@use "mixins" as *;
+
+* {
+  @include transition(background-position, box-shadow, opacity, color);
+}
+
+a:hover,
+.link:hover {
+  @include text-gradient;
+}
+
+.button:hover {
+  background-position: left;
+  @include shadow-box-over;
+}
+
+.container-icons:hover,
+.container-icons:active {
+  cursor: pointer;
+  .icon__restaurant {
+    &--empty {
+      opacity: 0;
+    }
+    &--filled {
+      opacity: 1;
+    }
+  }
+}
+
+.icon__locate-city:hover {
+  cursor: pointer;
+  color: $colour-reddishMagenta;
+}

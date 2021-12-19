@@ -8,10 +8,6 @@
 
 .icon {
   font-size: map-get($font-size, "medlarge");
-  &__locate-city:hover {
-    cursor: pointer;
-    color: $colour-reddishMagenta;
-  }
   &__return {
     position: absolute;
     left: 1rem;
@@ -48,19 +44,7 @@
       $colour-mediumPurple
     );
     background-clip: text;
+    -webkit-background-clip: text; //For chrome navigator
     color: transparent;
-  }
-}
-
-.container-icons:hover,
-.container-icons:active {
-  cursor: pointer;
-  .icon__restaurant {
-    &--empty {
-      opacity: 0;
-    }
-    &--filled {
-      opacity: 1;
-    }
   }
 }

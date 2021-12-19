@@ -117,6 +117,17 @@
     width: 100%;
     position: relative;
   }
+  &__new::after {
+    content: "Nouveau";
+    background: $colour-greenishCyan;
+    color: darken($colour-greenishCyan, 50%);
+    @extend %border-radius0;
+    padding: 0.75rem 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-family: $ffamily-roboto;
+  }
 }
 
 .card__menu {
