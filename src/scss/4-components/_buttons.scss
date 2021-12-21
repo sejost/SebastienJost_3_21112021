@@ -4,6 +4,8 @@
 
 .container-buttons {
   @include flex-center;
+  width: 100%;
+  @extend .bg__lightgrey;
 }
 
 .button {

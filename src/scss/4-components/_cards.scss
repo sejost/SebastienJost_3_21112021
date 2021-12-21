@@ -42,15 +42,25 @@
   @extend %border-radius1;
   margin: 1rem 0;
   position: relative;
-  height: 4rem;
+  height: 5rem;
   animation: displayCard 1s ease 2s 1 both;
+  overflow: hidden;
   h3 {
     padding-bottom: 0.5rem;
+  }
+  &__details {
+    @include flex-center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    height: 100%;
+    width: 100%;
+    position: relative;
   }
   &__instruction {
     cursor: pointer;
     width: 95%;
     counter-increment: card-list;
+    overflow: initial;
     @include respond(tablet) {
       width: 20rem;
     }
@@ -108,14 +118,6 @@
       height: 20rem;
     }
   }
-  &__details {
-    @include flex-center;
-    justify-content: space-between;
-    padding: 0.75rem;
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
   &__new::after {
     content: "Nouveau";
     background: $colour-greenishCyan;
@@ -130,21 +132,52 @@
 }
 
 .card__menu {
-  @include respond(tablet) {
-    cursor: pointer;
-  }
+  cursor: pointer;
   @include animation-delay-loop(4, 2.5s);
+
   .menu__description {
-    padding-right: 2.5rem;
+    @include flex-column;
+
+    min-width: 0%;
+    max-width: 80%;
+    & > * {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: " ...";
+    }
   }
   .menu__price {
     font-weight: map-get($font-weight, bold);
     position: absolute;
     right: 1rem;
-    bottom: 1rem;
+    bottom: 0.25rem;
+  }
+  &--visible {
+    @extend .card__details;
+    height: 4rem;
+    min-width: 0%;
+    max-width: 100%;
+  }
+  &--overlay {
+    @extend .card__details;
+    @include flex-center;
+    background: $colour-greenishCyan;
+    color: white;
+    display: none;
+    max-width: 5rem;
+    animation: displayCheck 600ms ease-in-out both;
+    .icon {
+      animation: spinner 600ms 1 300ms forwards;
+    }
   }
 }
 
-.card:hover {
+.card:hover,
+.card:active {
   @include shadow-box-over;
+  .card__menu--visible {
+  }
+  .card__menu--overlay {
+    display: flex;
+  }
 }
