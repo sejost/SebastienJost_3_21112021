@@ -1,0 +1,34 @@
+/* Header ohmyfood */
+@use "../1-base/" as *;
+@use "../2-utils/" as *;
+
+.container__loader {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 1;
+  animation: displaySpinner 2s linear forwards;
+  .loader {
+    margin: auto;
+    border: 0.5rem solid transparent;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+    @include respond(tablet) {
+      left: 50vw;
+    }
+    &--up {
+      border-top: 0.5rem solid $colour-mediumPurple;
+      animation: spinner 1s ease infinite forwards;
+    }
+    &--down {
+      border-bottom: 0.5rem solid $colour-reddishMagenta;
+      animation: spinner 1s ease infinite forwards;
+    }
+  }
+}

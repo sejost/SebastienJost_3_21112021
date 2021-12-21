@@ -89,3 +89,11 @@
 
   transition: $result;
 }
+
+@mixin animation-delay-loop($cardsnb, $delay) {
+  @for $i from 1 through $cardsnb {
+    &--#{$i} {
+      animation-delay: $delay + (0.25s * $i);
+    }
+  }
+}

@@ -5,7 +5,40 @@
   @include transition(background-position, box-shadow, opacity, color);
 }
 
+@keyframes displaySpinner {
+  95% {
+    opacity: 1;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes displayCard {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 a:hover,
+a:hover > *,
 .link:hover {
   @include text-gradient;
 }
