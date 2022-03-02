@@ -4,10 +4,10 @@
 *.docx
 *.doc
 *.json
+
+# Exclude directories
+src/mock-up
 /node_modules/
 /test
-
-# No mock-up files
-src/mock-up
 
 
