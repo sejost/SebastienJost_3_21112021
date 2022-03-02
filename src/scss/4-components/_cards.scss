@@ -143,7 +143,7 @@
     & > * {
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: " ...";
+      text-overflow: " ..."; //W3C Error check : ... is no value
     }
   }
   .menu__price {
@@ -172,12 +172,19 @@
   }
 }
 
-.card:hover,
 .card:active {
   @include shadow-box-over;
-  .card__menu--visible {
-  }
   .card__menu--overlay {
     display: flex;
+  }
+}
+
+@include respond(desktop) {
+  .card:active,
+  .card:hover {
+    @include shadow-box-over;
+    .card__menu--overlay {
+      display: flex;
+    }
   }
 }
