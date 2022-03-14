@@ -1,3 +1,5 @@
+/* Generic Styles definition */
+/* Mobile First */
 @use "../2-utils/" as *;
 
 * {
@@ -9,6 +11,7 @@ body {
   position: relative;
 }
 
+/* Titles styles definition */
 h1,
 h2,
 h3,
@@ -57,6 +60,8 @@ h4 {
     font-size: map-get($font-size, "medium");
   }
 }
+
+/* Text styles definition */
 
 a,
 p,

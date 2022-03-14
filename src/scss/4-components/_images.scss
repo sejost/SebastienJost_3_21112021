@@ -11,14 +11,8 @@ img {
 }
 
 .bg__img {
-  height: 15rem;
-  @include respond(tablet) {
-    height: 20rem;
-  }
-  @include respond(desktop) {
-    height: 30rem;
-  }
+  height: 20rem;
   @include respond(med-desktop) {
-    height: 50rem;
+    height: 25rem;
   }
 }

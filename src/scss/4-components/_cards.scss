@@ -57,7 +57,7 @@
     position: relative;
   }
   &__instruction {
-    cursor: pointer;
+    //cursor: pointer;
     width: 95%;
     counter-increment: card-list;
     overflow: initial;
@@ -133,17 +133,16 @@
 
 .card__menu {
   cursor: pointer;
+  height: 5.3rem;
   @include animation-delay-loop(4, 2.5s);
-
   .menu__description {
     @include flex-column;
-
     min-width: 0%;
     max-width: 80%;
     & > * {
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: " ..."; //W3C Error check : ... is no value
+      text-overflow: ellipsis;
     }
   }
   .menu__price {
@@ -172,7 +171,10 @@
   }
 }
 
-.card:active {
+.card__restaurant:active,
+.card__menu:active,
+.card__restaurant:hover,
+.card__menu:hover {
   @include shadow-box-over;
   .card__menu--overlay {
     display: flex;
@@ -180,8 +182,10 @@
 }
 
 @include respond(desktop) {
-  .card:active,
-  .card:hover {
+  .card__restaurant:active,
+  .card__menu:active,
+  .card__restaurant:hover,
+  .card__menu:hover {
     @include shadow-box-over;
     .card__menu--overlay {
       display: flex;

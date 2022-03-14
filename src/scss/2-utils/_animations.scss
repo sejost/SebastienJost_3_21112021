@@ -1,10 +1,16 @@
+/* Animation Styles definition */
+/* Mobile First */
+
 @use "vars" as *;
 @use "mixins" as *;
 
+/* Using transition everywhere for the following property */
 * {
   @include transition(background-position, box-shadow, opacity, color);
 }
 
+/* Kreyframes definition */
+/* Display the Spinner then fade out */
 @keyframes displaySpinner {
   95% {
     opacity: 1;
@@ -16,6 +22,7 @@
   }
 }
 
+/* Rotate the Spinner for 360degrees */
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -26,6 +33,7 @@
   }
 }
 
+/* Display the card by translation */
 @keyframes displayCard {
   0% {
     opacity: 0;
@@ -37,6 +45,7 @@
   }
 }
 
+/* Display the green Check logo */
 @keyframes displayCheck {
   0% {
     transform: translateX(5rem);
@@ -48,17 +57,25 @@
   }
 }
 
+/* Generic hover animations definition */
+/* Change colour to gradient on active/hover */
 a:hover,
 a:hover > *,
-.link:hover {
+.link:hover,
+a:active,
+a:active > *,
+.link:active {
   @include text-gradient;
 }
 
-.button:hover {
+/* Change shadow on hover*/
+.button:hover,
+.button:active {
   background-position: left;
   @include shadow-box-over;
 }
 
+/* Change add a cursor on active/hover and fill the heart icon */
 .container-icons:hover,
 .container-icons:active {
   cursor: pointer;
@@ -72,7 +89,9 @@ a:hover > *,
   }
 }
 
-.icon__locate-city:hover {
+/* Change colour "locate city icon" on active/hover */
+.icon__locate-city:hover,
+.icon__locate-city:active {
   cursor: pointer;
   color: $colour-reddishMagenta;
 }
