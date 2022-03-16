@@ -3,6 +3,7 @@
 @use "../1-base/" as *;
 @use "../2-utils/" as *;
 
+/* Global containers of cards */
 .container-cards {
   @include flex-column;
   justify-content: space-around;
@@ -11,6 +12,7 @@
   &__restaurant,
   &__menu {
     align-items: center;
+    //.container-cards responsive part
     @include respond(tablet) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -20,10 +22,12 @@
   }
 }
 
+/* This part has been added to allow the subdivision of restaurant menu cards */
 .subcontainer-cards {
   padding: 0.5rem 0;
   width: 100%;
   &__menu {
+    //.subcontainer-cards responsive part
     @include respond(tablet) {
       width: 70%;
     }
@@ -36,6 +40,7 @@
   }
 }
 
+/* All class of card */
 .card {
   @include flex-verticenter;
   @include shadow-box;
@@ -48,6 +53,7 @@
   h3 {
     padding-bottom: 0.5rem;
   }
+  /* Details of Menu Card, only used on the main page */
   &__details {
     @include flex-center;
     justify-content: space-between;
@@ -57,10 +63,10 @@
     position: relative;
   }
   &__instruction {
-    //cursor: pointer;
     width: 95%;
     counter-increment: card-list;
     overflow: initial;
+    //card__instructions responsive part
     @include respond(tablet) {
       width: 20rem;
     }
@@ -94,6 +100,7 @@
     height: 15rem;
     width: 100%;
     overflow: hidden;
+    //card__restaurant responsive part
     @include respond(tablet) {
       width: 45%;
     }
@@ -111,6 +118,7 @@
   &__img {
     height: 10rem;
     width: 100%;
+    //card__img responsive part
     @include respond(desktop) {
       height: 15rem;
     }

@@ -82,16 +82,16 @@
   }
 }
 
-/* Definition with a loop of all the transition in _animations.scss*/
-@mixin transition($props...) {
+/* Definition of a mixins with a loop of all the transition's proporties in _animations.scss*/
+@mixin transition($properties...) {
+  // "..." allow you to declare multiple properties at the same time
   $result: ();
-
-  @for $i from 1 through length($props) {
-    $prop: nth($props, $i);
+  @for $i from 1 through length($properties) {
+    $prop: nth($properties, $i);
     $result: append($result, $prop);
     $result: append($result, ease-in-out 0.2s);
 
-    @if $i != length($props) {
+    @if $i != length($properties) {
       $result: append(
         $result,
         unquote(
@@ -100,10 +100,11 @@
       );
     }
   }
-
   transition: $result;
 }
 
+/* Definition of the cards' display delay.
+This is a loop so that the cards appear one after the other.  */
 @mixin animation-delay-loop($cardsnb, $delay) {
   @for $i from 1 through $cardsnb {
     &--#{$i} {

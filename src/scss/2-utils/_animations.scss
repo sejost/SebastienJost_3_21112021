@@ -7,6 +7,9 @@
 /* Using transition everywhere for the following property */
 * {
   @include transition(background-position, box-shadow, opacity, color);
+  //@include transition(box-shadow);
+  //@include transition(opacity);
+  //@include transition(color);
 }
 
 /* Kreyframes definition */

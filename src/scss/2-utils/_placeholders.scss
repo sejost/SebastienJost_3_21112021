@@ -1,6 +1,8 @@
-/* Placeholders ohmyfood */
+/* Placeholders ohmyfood 
+This file defines all placeholders and extension class */
 @use "vars" as *;
 
+/* PlaceHolders ofr the radius parts */
 %border-radius0 {
   border-radius: 0.5rem;
 }
@@ -17,6 +19,7 @@
   border-radius: 2rem;
 }
 
+/* Extend class for the background colours part */
 .bg__darkgrey {
   background: $colour-darkGrey;
 }

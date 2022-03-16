@@ -1,4 +1,5 @@
 /* Buttons ohmyfood */
+/* Mobile First */
 @use "../1-base/" as *;
 @use "../2-utils/" as *;
 
@@ -18,6 +19,8 @@
   font-size: map-get($font-size, small);
   color: white;
   padding: 1rem;
+
+  //.button responsive part
   @include respond(tablet) {
     font-size: map-get($font-size, "smedium");
   }
