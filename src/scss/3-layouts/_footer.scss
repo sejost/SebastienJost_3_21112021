@@ -2,9 +2,10 @@
 /* Mobile First */
 @use "../1-base/" as *;
 @use "../2-utils/" as *;
+@use "_sections.scss/" as *;
 
 .footer__container {
-  @include flex-column;
+  @extend .section;
   .title__footer {
     color: white;
     padding-bottom: 1rem;
