@@ -5,16 +5,16 @@
 
 .container-title {
   @include flex-center;
-  justify-content: space-between;
   padding: 0 2rem 2rem 0;
+  justify-content: space-between;
   .title__part--subtitle {
     @include flex-column;
   }
 }
 
 .underline {
+  background: $colour-greenishCyan;
   height: 0.2rem;
   width: 2.5rem;
   margin-top: 0.25rem;
-  background: $colour-greenishCyan;
 }

@@ -10,10 +10,10 @@
 .explore-restaurants {
   @include flex-column;
   @include flex-center;
-  justify-content: space-around;
-  text-align: center;
   height: 18rem;
   padding: 2rem 3rem;
+  justify-content: space-around;
+  text-align: center;
   @include respond(tablet) {
     height: 15rem;
   }

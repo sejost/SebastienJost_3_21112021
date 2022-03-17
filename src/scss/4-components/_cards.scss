@@ -6,8 +6,8 @@
 /* Global containers of cards */
 .container-cards {
   @include flex-column;
-  justify-content: space-around;
   padding: 1rem 0;
+  justify-content: space-around;
   &__instruction,
   &__restaurant,
   &__menu {
@@ -24,8 +24,8 @@
 
 /* This part has been added to allow the subdivision of restaurant menu cards */
 .subcontainer-cards {
-  padding: 0.5rem 0;
   width: 100%;
+  padding: 0.5rem 0;
   &__menu {
     //.subcontainer-cards responsive part
     @include respond(tablet) {
@@ -45,10 +45,10 @@
   @include flex-verticenter;
   @include shadow-box;
   @extend %border-radius1;
+  animation: displayCard 1s ease 2s 1 both;
+  height: 5rem;
   margin: 1rem 0;
   position: relative;
-  height: 5rem;
-  animation: displayCard 1s ease 2s 1 both;
   overflow: hidden;
   h3 {
     padding-bottom: 0.5rem;
@@ -56,11 +56,11 @@
   /* Details of Menu Card, only used on the main page */
   &__details {
     @include flex-center;
-    justify-content: space-between;
-    padding: 0rem 1rem;
     height: 100%;
     width: 100%;
+    padding: 0rem 1rem;
     position: relative;
+    justify-content: space-between;
   }
   &__instruction {
     width: 95%;
@@ -83,9 +83,9 @@
       content: counter(card-list);
       @include flex-center;
       @extend %border-radius3;
-      padding: 0.5rem 0.75rem;
       background: $colour-mediumPurple;
       color: white;
+      padding: 0.5rem 0.75rem;
       position: absolute;
       left: -1rem;
     }
@@ -127,15 +127,15 @@
     }
   }
   &__new::after {
+    @extend %border-radius0;
     content: "Nouveau";
     background: $colour-greenishCyan;
     color: darken($colour-greenishCyan, 50%);
-    @extend %border-radius0;
     padding: 0.75rem 1rem;
+    font-family: $ffamily-roboto;
     position: absolute;
     right: 1rem;
     top: 1rem;
-    font-family: $ffamily-roboto;
   }
 }
 
@@ -168,11 +168,11 @@
   &--overlay {
     @extend .card__details;
     @include flex-center;
+    animation: displayCheck 600ms ease-in-out both;
     background: $colour-greenishCyan;
     color: white;
-    display: none;
     max-width: 5rem;
-    animation: displayCheck 600ms ease-in-out both;
+    display: none;
     .icon {
       animation: spinner 600ms 1 300ms forwards;
     }

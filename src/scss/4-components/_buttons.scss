@@ -5,21 +5,20 @@
 
 .container-buttons {
   @include flex-center;
-  width: 100%;
   @extend .bg__lightgrey;
+  width: 100%;
 }
 
 .button {
-  @extend %border-radius3;
   @include shadow-box;
   @include background-gradient;
-  background-size: 300%;
-  background-position: center;
+  @extend %border-radius3;
   cursor: pointer;
-  font-size: map-get($font-size, small);
   color: white;
   padding: 1rem;
-
+  background-size: 300%;
+  background-position: center;
+  font-size: map-get($font-size, small);
   //.button responsive part
   @include respond(tablet) {
     font-size: map-get($font-size, "smedium");
@@ -28,7 +27,7 @@
     font-size: map-get($font-size, "medium");
   }
   &__menu {
-    padding: 1rem 2rem;
     margin: 2rem 0;
+    padding: 1rem 2rem;
   }
 }

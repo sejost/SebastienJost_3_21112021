@@ -33,11 +33,10 @@
 .icon__restaurant {
   font-size: map-get($font-size, "large");
   &--empty {
-    opacity: 1;
     position: absolute;
+    opacity: 1;
   }
   &--filled {
-    opacity: 0;
     background-image: linear-gradient(
       to bottom left,
       $colour-reddishMagenta,
@@ -46,5 +45,6 @@
     background-clip: text;
     -webkit-background-clip: text; //For chrome navigator
     color: transparent;
+    opacity: 0;
   }
 }
