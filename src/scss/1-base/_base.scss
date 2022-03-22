@@ -1,5 +1,6 @@
 /* Generic Styles definition */
 /* Mobile First */
+@use "../5-vendors/" as *;
 @use "../2-utils/" as *;
 
 * {
