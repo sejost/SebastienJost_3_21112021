@@ -4,9 +4,11 @@
 @use "../2-utils/" as *;
 
 .container-buttons {
-  @include flex-center;
   @extend .bg__lightgrey;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
@@ -19,10 +21,12 @@
   background-size: 300%;
   background-position: center;
   font-size: map-get($font-size, small);
+
   //.button responsive part
   @include respond(tablet) {
     font-size: map-get($font-size, "smedium");
   }
+
   @include respond(desktop) {
     font-size: map-get($font-size, "medium");
   }

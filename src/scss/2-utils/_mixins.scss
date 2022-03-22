@@ -1,32 +1,6 @@
 /* Mixins Styles definition */
 /* Mobile First */
-
 @use "vars" as *;
-
-/* Center an Item with Flexbox */
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Center an Item Horizontaly with Flexbox */
-@mixin flex-horicenter {
-  display: flex;
-  justify-content: center;
-}
-
-/* Center an Item Verticaly with Flexbox */
-@mixin flex-verticenter {
-  display: flex;
-  align-items: center;
-}
-
-/* Display Flexbox column*/
-@mixin flex-column {
-  display: flex;
-  flex-direction: column;
-}
 
 /* Definition of the box shadow */
 @mixin shadow-box {

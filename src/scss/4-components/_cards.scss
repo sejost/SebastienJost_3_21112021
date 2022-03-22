@@ -5,15 +5,17 @@
 
 /* Global containers of cards */
 .container-cards {
-  @include flex-column;
   padding: 1rem 0;
   justify-content: space-around;
+  display: flex;
+  flex-direction: column;
 
   &__instruction,
   &__restaurant,
   &__menu {
     align-items: center;
     //.container-cards responsive part
+
     @include respond(tablet) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -44,7 +46,6 @@
 
 /* All class of card */
 .card {
-  @include flex-verticenter;
   @include shadow-box;
   @extend %border-radius1;
   animation: displayCard 1s ease 2s 1 both;
@@ -52,6 +53,8 @@
   margin: 1rem 0;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 
   h3 {
     padding-bottom: 0.5rem;
@@ -59,11 +62,13 @@
 
   /* Details of Menu Card, only used on the main page */
   &__details {
-    @include flex-center;
     height: 100%;
     width: 100%;
     padding: 0rem 1rem;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     justify-content: space-between;
   }
 
@@ -87,13 +92,15 @@
 
     &::before {
       content: counter(card-list);
-      @include flex-center;
       @extend %border-radius3;
       background: $colour-mediumPurple;
       color: white;
       padding: 0.5rem 0.75rem;
       position: absolute;
       left: -1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     @include animation-delay-loop(3, 2s);
   }
@@ -104,10 +111,12 @@
   }
 
   &__restaurant {
-    @include flex-column;
     height: 15rem;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
     //card__restaurant responsive part
     @include respond(tablet) {
       width: 45%;
@@ -155,9 +164,10 @@
   @include animation-delay-loop(4, 2.5s);
 
   .menu__description {
-    @include flex-column;
     min-width: 0%;
     max-width: 80%;
+    display: flex;
+    flex-direction: column;
 
     & > * {
       white-space: nowrap;
@@ -181,12 +191,14 @@
 
   &--overlay {
     @extend .card__details;
-    @include flex-center;
     animation: displayCheck 600ms ease-in-out both;
     background: $colour-greenishCyan;
     color: white;
     max-width: 5rem;
+    display: flex;
     display: none;
+    align-items: center;
+    justify-content: center;
     .icon {
       animation: spinner 600ms 1 300ms forwards;
     }

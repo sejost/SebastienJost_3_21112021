@@ -12,7 +12,8 @@
   }
 
   .container__links {
-    @include flex-column;
+    display: flex;
+    flex-direction: column;
     .link {
       padding: 0.25rem 0;
       & > * {

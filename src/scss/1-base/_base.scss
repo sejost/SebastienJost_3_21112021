@@ -7,8 +7,9 @@
 }
 
 body {
-  @include flex-column;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Titles styles definition */

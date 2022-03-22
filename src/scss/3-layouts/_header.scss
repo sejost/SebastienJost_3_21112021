@@ -4,7 +4,9 @@
 @use "../2-utils/" as *;
 
 .header__container {
-  padding: 1rem 0;
-  @include flex-center;
   @include shadow-box;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
