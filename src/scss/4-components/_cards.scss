@@ -159,9 +159,10 @@
 }
 
 .card__menu {
-  cursor: pointer;
-  height: 5.3rem;
   @include animation-delay-loop(4, 2.5s);
+  cursor: pointer;
+  height: 5rem;
+  line-height: 1.5rem;
 
   .menu__description {
     min-width: 0%;
@@ -179,12 +180,11 @@
     font-weight: map-get($font-weight, bold);
     position: absolute;
     right: 1rem;
-    bottom: 0.25rem;
+    bottom: 0.6rem;
   }
 
   &--visible {
     @extend .card__details;
-    height: 4rem;
     min-width: 0%;
     max-width: 100%;
   }
