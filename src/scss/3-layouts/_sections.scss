@@ -13,10 +13,10 @@
   @include respond(med-desktop) {
     padding: 3rem 5rem;
   }
+}
 
-  &__menu {
-    border-radius: 2rem 2rem 0 0;
-    margin-top: -2rem;
-    position: relative;
-  }
+.section__menu {
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -2rem;
+  position: relative;
 }

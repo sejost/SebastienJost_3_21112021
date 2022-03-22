@@ -8,48 +8,48 @@
 
 .icon {
   font-size: map-get($font-size, "medlarge");
+}
 
-  &__return {
-    position: absolute;
-    left: 1rem;
-    top: 1.5rem;
-    @include respond(tablet) {
-      left: 4rem;
-    }
-    @include respond(desktop) {
-      left: 6rem;
-    }
-    @include respond(med-desktop) {
-      left: 10rem;
-    }
+.icon__return {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  @include respond(tablet) {
+    left: 4rem;
   }
+  @include respond(desktop) {
+    left: 6rem;
+  }
+  @include respond(med-desktop) {
+    left: 10rem;
+  }
+}
 
-  &__instruction {
-    padding: 0 2rem;
-  }
+.icon__instruction {
+  padding: 0 2rem;
+}
 
-  &__footer {
-    width: 2rem;
-  }
+.icon__footer {
+  width: 2rem;
 }
 
 .icon__restaurant {
   font-size: map-get($font-size, "large");
+}
 
-  &--empty {
-    position: absolute;
-    opacity: 1;
-  }
+.icon__restaurant--empty {
+  position: absolute;
+  opacity: 1;
+}
 
-  &--filled {
-    background-image: linear-gradient(
-      to bottom left,
-      $colour-reddishMagenta,
-      $colour-mediumPurple
-    );
-    background-clip: text;
-    -webkit-background-clip: text; //For chrome navigator
-    color: transparent;
-    opacity: 0;
-  }
+.icon__restaurant--filled {
+  background-image: linear-gradient(
+    to bottom left,
+    $colour-reddishMagenta,
+    $colour-mediumPurple
+  );
+  background-clip: text;
+  -webkit-background-clip: text; //For chrome navigator
+  color: transparent;
+  opacity: 0;
 }

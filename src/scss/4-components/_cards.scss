@@ -9,19 +9,19 @@
   justify-content: space-around;
   display: flex;
   flex-direction: column;
+}
 
-  &__instruction,
-  &__restaurant,
-  &__menu {
-    align-items: center;
-    //.container-cards responsive part
+.container-cards__instruction,
+.container-cards__restaurant,
+.container-cards__menu {
+  align-items: center;
 
-    @include respond(tablet) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: baseline;
-    }
+  //.container-cards responsive part
+  @include respond(tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -29,18 +29,18 @@
 .subcontainer-cards {
   width: 100%;
   padding: 0.5rem 0;
+}
 
-  &__menu {
-    //.subcontainer-cards responsive part
-    @include respond(tablet) {
-      width: 70%;
-    }
-    @include respond(desktop) {
-      width: 45%;
-    }
-    @include respond(large-desktop) {
-      width: 30%;
-    }
+//.subcontainer-cards responsive part
+.subcontainer-cards__menu {
+  @include respond(tablet) {
+    width: 70%;
+  }
+  @include respond(desktop) {
+    width: 45%;
+  }
+  @include respond(large-desktop) {
+    width: 30%;
   }
 }
 
@@ -59,103 +59,104 @@
   h3 {
     padding-bottom: 0.5rem;
   }
+}
 
-  /* Details of Menu Card, only used on the main page */
-  &__details {
-    height: 100%;
-    width: 100%;
-    padding: 0rem 1rem;
-    position: relative;
+/* Details of Menu Card, only used on the main page */
+.card__details {
+  height: 100%;
+  width: 100%;
+  padding: 0rem 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.card__instruction {
+  width: 95%;
+  counter-increment: card-list;
+  overflow: initial;
+  //card__instructions responsive part
+  @include respond(tablet) {
+    width: 20rem;
+  }
+  @include respond(desktop) {
+    width: 22rem;
+  }
+  @include respond(med-desktop) {
+    width: 24rem;
+  }
+  @include respond(med-desktop) {
+    width: 26rem;
+  }
+
+  &::before {
+    content: counter(card-list);
+    @extend %border-radius3;
+    background: $colour-mediumPurple;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    position: absolute;
+    left: -1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: space-between;
   }
+  @include animation-delay-loop(3, 2s);
+}
 
-  &__instruction {
-    width: 95%;
-    counter-increment: card-list;
-    overflow: initial;
-    //card__instructions responsive part
-    @include respond(tablet) {
-      width: 20rem;
-    }
-    @include respond(desktop) {
-      width: 22rem;
-    }
-    @include respond(med-desktop) {
-      width: 24rem;
-    }
-    @include respond(med-desktop) {
-      width: 26rem;
-    }
+.card__restaurant,
+.card__menu {
+  background: white;
+}
 
-    &::before {
-      content: counter(card-list);
-      @extend %border-radius3;
-      background: $colour-mediumPurple;
-      color: white;
-      padding: 0.5rem 0.75rem;
-      position: absolute;
-      left: -1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    @include animation-delay-loop(3, 2s);
+.card__restaurant {
+  height: 15rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  //card__restaurant responsive part
+  @include respond(tablet) {
+    width: 45%;
   }
-
-  &__restaurant,
-  &__menu {
-    background: white;
+  @include respond(desktop) {
+    height: 20rem;
   }
+  @include respond(med-desktop) {
+    height: 25rem;
+  }
+  @include respond(large-desktop) {
+    width: 23%;
+  }
+  @include animation-delay-loop(4, 2.5s);
+}
 
-  &__restaurant {
+.card__img {
+  height: 10rem;
+  width: 100%;
+
+  //card__img responsive part
+  @include respond(desktop) {
     height: 15rem;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-
-    //card__restaurant responsive part
-    @include respond(tablet) {
-      width: 45%;
-    }
-    @include respond(desktop) {
-      height: 20rem;
-    }
-    @include respond(med-desktop) {
-      height: 25rem;
-    }
-    @include respond(large-desktop) {
-      width: 23%;
-    }
-    @include animation-delay-loop(4, 2.5s);
   }
-
-  &__img {
-    height: 10rem;
-    width: 100%;
-    //card__img responsive part
-    @include respond(desktop) {
-      height: 15rem;
-    }
-    @include respond(med-desktop) {
-      height: 20rem;
-    }
+  @include respond(med-desktop) {
+    height: 20rem;
   }
+}
 
-  &__new::after {
-    @extend %border-radius0;
-    content: "Nouveau";
-    background: $colour-greenishCyan;
-    color: darken($colour-greenishCyan, 50%);
-    padding: 0.75rem 1rem;
-    font-family: $ffamily-roboto;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
+.card__new::after {
+  @extend %border-radius0;
+  content: "Nouveau";
+  background: $colour-greenishCyan;
+  color: darken($colour-greenishCyan, 50%);
+  padding: 0.75rem 1rem;
+  font-family: $ffamily-roboto;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
 
 .card__menu {
@@ -182,26 +183,26 @@
     right: 1rem;
     bottom: 0.6rem;
   }
+}
 
-  &--visible {
-    @extend .card__details;
-    min-width: 0%;
-    max-width: 100%;
-  }
+.card__menu--visible {
+  @extend .card__details;
+  min-width: 0%;
+  max-width: 100%;
+}
 
-  &--overlay {
-    @extend .card__details;
-    animation: displayCheck 600ms ease-in-out both;
-    background: $colour-greenishCyan;
-    color: white;
-    max-width: 5rem;
-    display: flex;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    .icon {
-      animation: spinner 600ms 1 300ms forwards;
-    }
+.card__menu--overlay {
+  @extend .card__details;
+  animation: displayCheck 600ms ease-in-out both;
+  background: $colour-greenishCyan;
+  color: white;
+  max-width: 5rem;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  .icon {
+    animation: spinner 600ms 1 300ms forwards;
   }
 }
 

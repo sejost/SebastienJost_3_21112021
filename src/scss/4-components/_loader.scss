@@ -23,15 +23,15 @@
     @include respond(tablet) {
       left: 50vw;
     }
+  }
 
-    &--up {
-      border-top: 0.5rem solid $colour-mediumPurple;
-      animation: spinner 1s ease infinite forwards;
-    }
+  .loader--up {
+    border-top: 0.5rem solid $colour-mediumPurple;
+    animation: spinner 1s ease infinite forwards;
+  }
 
-    &--down {
-      border-bottom: 0.5rem solid $colour-reddishMagenta;
-      animation: spinner 1s ease infinite forwards;
-    }
+  .loader--down {
+    border-bottom: 0.5rem solid $colour-reddishMagenta;
+    animation: spinner 1s ease infinite forwards;
   }
 }

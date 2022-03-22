@@ -82,14 +82,13 @@ a:active > *,
 .container-icons:hover,
 .container-icons:active {
   cursor: pointer;
-  .icon__restaurant {
-    &--empty {
-      opacity: 0;
-    }
 
-    &--filled {
-      opacity: 1;
-    }
+  .icon__restaurant--empty {
+    opacity: 0;
+  }
+
+  .icon__restaurant--filled {
+    opacity: 1;
   }
 }
 
