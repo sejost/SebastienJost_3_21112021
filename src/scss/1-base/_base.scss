@@ -84,10 +84,8 @@ input {
 /* Change colour to gradient on active/hover */
 a:hover,
 a:hover > *,
-.link:hover,
 a:active,
-a:active > *,
-.link:active {
+a:active > * {
   @include text-gradient;
 }
 

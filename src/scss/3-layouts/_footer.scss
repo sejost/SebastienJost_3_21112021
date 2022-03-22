@@ -4,19 +4,20 @@
 @use "../2-utils/" as *;
 @use "_sections.scss/" as *;
 
-.footer__container {
+footer {
   @extend .section;
   .title__footer {
     color: white;
     padding-bottom: 1rem;
   }
 
-  .container__links {
+  nav {
     display: flex;
     flex-direction: column;
-    .link {
-      padding: 0.25rem 0;
-      & > * {
+    a {
+      color: white;
+      line-height: 2rem;
+      i {
         color: white;
       }
     }
