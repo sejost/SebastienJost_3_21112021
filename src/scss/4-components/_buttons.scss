@@ -26,6 +26,7 @@
   @include respond(desktop) {
     font-size: map-get($font-size, "medium");
   }
+
   &__menu {
     margin: 2rem 0;
     padding: 1rem 2rem;

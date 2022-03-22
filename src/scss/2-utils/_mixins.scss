@@ -55,16 +55,19 @@
 /* Definition of the text colour gradient */
 @mixin text-gradient {
   background: $colour-mediumPurple;
+
   background: -webkit-linear-gradient(
     175deg,
     $colour-reddishMagenta 10%,
     $colour-mediumPurple 100%
   );
+
   background: -moz-linear-gradient(
     175deg,
     $colour-reddishMagenta 10%,
     $colour-mediumPurple 100%
   );
+
   background: linear-gradient(
     175deg,
     $colour-reddishMagenta 10%,
@@ -82,7 +85,11 @@
   }
 }
 
-/* Definition of a mixins with a loop of all the transition's proporties in _animations.scss*/
+@mixin transition {
+  transition: ease-in-out 0.2s;
+}
+
+/* Definition of a mixins with a loop of all the transition's proporties in _animations.scss */
 @mixin transition($properties...) {
   // "..." allow you to declare multiple properties at the same time
   $result: ();

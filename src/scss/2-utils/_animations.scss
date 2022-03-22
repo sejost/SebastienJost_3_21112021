@@ -7,9 +7,6 @@
 /* Using transition everywhere for the following property */
 * {
   @include transition(background-position, box-shadow, opacity, color);
-  //@include transition(box-shadow);
-  //@include transition(opacity);
-  //@include transition(color);
 }
 
 /* Kreyframes definition */
@@ -19,6 +16,7 @@
     opacity: 1;
     visibility: hidden;
   }
+
   100% {
     opacity: 0;
     visibility: hidden;
@@ -42,6 +40,7 @@
     opacity: 0;
     transform: translateY(3rem);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -54,6 +53,7 @@
     transform: translateX(5rem);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -86,6 +86,7 @@ a:active > *,
     &--empty {
       opacity: 0;
     }
+
     &--filled {
       opacity: 1;
     }

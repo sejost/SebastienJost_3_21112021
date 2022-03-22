@@ -8,6 +8,7 @@
   @include flex-column;
   padding: 1rem 0;
   justify-content: space-around;
+
   &__instruction,
   &__restaurant,
   &__menu {
@@ -26,6 +27,7 @@
 .subcontainer-cards {
   width: 100%;
   padding: 0.5rem 0;
+
   &__menu {
     //.subcontainer-cards responsive part
     @include respond(tablet) {
@@ -50,9 +52,11 @@
   margin: 1rem 0;
   position: relative;
   overflow: hidden;
+
   h3 {
     padding-bottom: 0.5rem;
   }
+
   /* Details of Menu Card, only used on the main page */
   &__details {
     @include flex-center;
@@ -62,6 +66,7 @@
     position: relative;
     justify-content: space-between;
   }
+
   &__instruction {
     width: 95%;
     counter-increment: card-list;
@@ -79,6 +84,7 @@
     @include respond(med-desktop) {
       width: 26rem;
     }
+
     &::before {
       content: counter(card-list);
       @include flex-center;
@@ -91,10 +97,12 @@
     }
     @include animation-delay-loop(3, 2s);
   }
+
   &__restaurant,
   &__menu {
     background: white;
   }
+
   &__restaurant {
     @include flex-column;
     height: 15rem;
@@ -115,6 +123,7 @@
     }
     @include animation-delay-loop(4, 2.5s);
   }
+
   &__img {
     height: 10rem;
     width: 100%;
@@ -126,6 +135,7 @@
       height: 20rem;
     }
   }
+
   &__new::after {
     @extend %border-radius0;
     content: "Nouveau";
@@ -143,10 +153,12 @@
   cursor: pointer;
   height: 5.3rem;
   @include animation-delay-loop(4, 2.5s);
+
   .menu__description {
     @include flex-column;
     min-width: 0%;
     max-width: 80%;
+
     & > * {
       white-space: nowrap;
       overflow: hidden;
@@ -159,12 +171,14 @@
     right: 1rem;
     bottom: 0.25rem;
   }
+
   &--visible {
     @extend .card__details;
     height: 4rem;
     min-width: 0%;
     max-width: 100%;
   }
+
   &--overlay {
     @extend .card__details;
     @include flex-center;
@@ -184,6 +198,7 @@
 .card__restaurant:hover,
 .card__menu:hover {
   @include shadow-box-over;
+
   .card__menu--overlay {
     display: flex;
   }
@@ -195,6 +210,7 @@
   .card__restaurant:hover,
   .card__menu:hover {
     @include shadow-box-over;
+
     .card__menu--overlay {
       display: flex;
     }
