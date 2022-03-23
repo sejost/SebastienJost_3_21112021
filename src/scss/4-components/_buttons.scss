@@ -4,10 +4,8 @@
 @use "../2-utils/" as *;
 
 .container-buttons {
-  @extend .bg__lightgrey;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 

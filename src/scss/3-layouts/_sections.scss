@@ -5,6 +5,7 @@
 
 .section {
   padding: 2rem 1.125rem;
+  //display: flex;
 
   @include respond(tablet) {
     padding: 3rem 4rem;
