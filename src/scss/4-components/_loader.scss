@@ -2,7 +2,7 @@
 @use "../1-base/" as *;
 @use "../2-utils/" as *;
 
-.container__loader {
+.loader {
   background: white;
   height: 100%;
   width: 100%;
@@ -11,7 +11,7 @@
   opacity: 1;
   animation: displaySpinner 2s linear forwards;
 
-  .loader {
+  .loader__arc {
     margin: auto;
     border: 0.5rem solid transparent;
     border-radius: 50%;
@@ -25,12 +25,12 @@
     }
   }
 
-  .loader--up {
+  .loader__arc--up {
     border-top: 0.5rem solid $colour-mediumPurple;
     animation: spinner 1s ease infinite forwards;
   }
 
-  .loader--down {
+  .loader__arc--down {
     border-bottom: 0.5rem solid $colour-reddishMagenta;
     animation: spinner 1s ease infinite forwards;
   }
