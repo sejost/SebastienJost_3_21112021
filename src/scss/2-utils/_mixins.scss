@@ -28,25 +28,14 @@
 
 /* Definition of the text colour gradient */
 @mixin text-gradient {
-  background: $colour-mediumPurple;
-
-  background: -webkit-linear-gradient(
-    175deg,
-    $colour-reddishMagenta 10%,
-    $colour-mediumPurple 100%
-  );
-
-  background: -moz-linear-gradient(
-    175deg,
-    $colour-reddishMagenta 10%,
-    $colour-mediumPurple 100%
-  );
-
+  //background: $colour-mediumPurple;
   background: linear-gradient(
     175deg,
     $colour-reddishMagenta 10%,
     $colour-mediumPurple 100%
   );
+
+  /* Following prefixers still needed even with autoprefixer */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
