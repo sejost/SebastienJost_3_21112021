@@ -3,9 +3,14 @@
 @use "../1-base/" as *;
 @use "../2-utils/" as *;
 
-.header__container {
+header {
   @include shadow-box;
   padding: 1rem 0;
   display: flex;
-  align-items: center;
+  justify-content: center;
+
+  .title {
+    font-family: $ffamily-shrikhand;
+    min-width: 14rem;
+  }
 }

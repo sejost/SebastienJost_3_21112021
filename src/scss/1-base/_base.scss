@@ -21,11 +21,6 @@ h4 {
   font-family: $ffamily-roboto;
 }
 
-.title {
-  font-family: $ffamily-shrikhand;
-  min-width: 14rem;
-}
-
 h1 {
   font-size: map-get($font-size, "large");
   font-weight: map-get($font-weight, "bold");
