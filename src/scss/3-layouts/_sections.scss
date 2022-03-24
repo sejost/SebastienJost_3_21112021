@@ -3,7 +3,7 @@
 @use "../1-base/" as *;
 @use "../2-utils/" as *;
 
-.section {
+section {
   padding: 2rem 1.125rem;
 
   @include respond(tablet) {

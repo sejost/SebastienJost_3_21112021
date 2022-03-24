@@ -5,8 +5,17 @@
 @use "_sections.scss/" as *;
 
 footer {
-  @extend .section;
-  .title__footer {
+  padding: 2rem 1.125rem;
+
+  @include respond(tablet) {
+    padding: 3rem 4rem;
+  }
+
+  @include respond(med-desktop) {
+    padding: 3rem 5rem;
+  }
+
+  .title {
     color: white;
     padding-bottom: 1rem;
   }
