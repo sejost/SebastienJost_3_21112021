@@ -108,8 +108,11 @@ a:hover > .title {
 }
 
 /* Change colour "locate city icon" on active/hover */
-.icon__locate-city:hover,
-.icon__locate-city:active {
-  cursor: pointer;
-  color: $colour-reddishMagenta;
+
+.form__locate {
+  i:hover,
+  i:active {
+    cursor: pointer;
+    color: $colour-reddishMagenta;
+  }
 }

@@ -41,16 +41,16 @@
     </header>
 
     <!-- Form Locate Section -->
-    <form class="form form__explore" action="#" method="post">
-        <div class="locate-city bg__darkgrey--fo1">
-            <i class="icon icon__locate-city fas fa-map-marker-alt"></i>
-            <input class="input__text" placeholder="Paris, Belleville" type="text" name="location" required>
-        </div>
-        <div class="explore-restaurants bg__darkgrey--fo2">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exceptions, sélectionnés par nos soins.</p>
-            <input class="button input__button" type="submit" value="Explorer nos restaurants" name="location">
-        </div>
+    <form action="#" method="post">
+        <fieldset class="form__locate bg__darkgrey--fo1">
+                <i class="icon fas fa-map-marker-alt"></i>
+                <input placeholder="Paris, Belleville" type="text" name="location" required>
+        </fieldset>
+        <fieldset class="form__instructions bg__darkgrey--fo2">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exceptions, sélectionnés par nos soins.</p>
+                <input class="button" type="submit" value="Explorer nos restaurants" name="location">
+        </fieldset>
     </form>
 
     <!-- Instructions' Step Section -->
