@@ -4,7 +4,7 @@
 @use "../2-utils/" as *;
 
 /* Global containers of cards */
-.cards-container {
+.menu__main {
   padding: 1rem 0;
   justify-content: space-around;
   display: flex;
@@ -20,13 +20,11 @@
 }
 
 /* This part has been added to allow the subdivision of restaurant menu cards */
-.cards-subcontainer {
+.courses {
   width: 100%;
   padding: 0.5rem 0;
-}
 
-//.cards-subcontainer responsive part
-.cards-subcontainer__menu {
+  //.cards-subcontainer responsive part
   @include respond(tablet) {
     width: 70%;
   }
