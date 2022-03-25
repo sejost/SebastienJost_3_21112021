@@ -98,15 +98,15 @@ a:hover > .title {
 }
 
 /* Change add a cursor on active/hover and fill the heart icon */
-.container-icons:hover,
-.container-icons:active {
+.icons-container:hover,
+.icons-container:active {
   cursor: pointer;
 
-  .icon__restaurant--empty {
+  .icon__heart--empty {
     opacity: 0;
   }
 
-  .icon__restaurant--filled {
+  .icon__heart--filled {
     opacity: 1;
   }
 }

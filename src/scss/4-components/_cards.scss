@@ -9,14 +9,8 @@
   justify-content: space-around;
   display: flex;
   flex-direction: column;
-}
-
-.cards-container__instruction,
-.cards-container__restaurant,
-.cards-container__menu {
   align-items: center;
 
-  //.cards-container responsive part
   @include respond(tablet) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -73,22 +67,24 @@
   justify-content: space-between;
 }
 
-.card__instruction {
+.operation__card {
   width: 95%;
   counter-increment: card-list;
   overflow: initial;
-  //card__instructions responsive part
+
+  .icon {
+    padding: 0 2rem;
+  }
+
+  //operation__card responsive part
   @include respond(tablet) {
     width: 20rem;
   }
   @include respond(desktop) {
     width: 22rem;
   }
-  @include respond(med-desktop) {
-    width: 24rem;
-  }
-  @include respond(med-desktop) {
-    width: 26rem;
+  @include respond(large-desktop) {
+    width: 28rem;
   }
 
   &::before {
@@ -106,19 +102,19 @@
   @include animation-delay-loop(3, 2s);
 }
 
-.card__restaurant,
+.restaurant__card,
 .card__menu {
   background: white;
 }
 
-.card__restaurant {
+.restaurant__card {
   height: 15rem;
   width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 
-  //card__restaurant responsive part
+  //restaurant__card responsive part
   @include respond(tablet) {
     width: 45%;
   }
@@ -147,7 +143,7 @@
   }
 }
 
-.card__new::after {
+.restaurant__card--new::after {
   @extend %border-radius0;
   content: "Nouveau";
   background: $colour-greenishCyan;
@@ -207,9 +203,9 @@
   }
 }
 
-.card__restaurant:active,
+.restaurant__card:active,
 .card__menu:active,
-.card__restaurant:hover,
+.restaurant__card:hover,
 .card__menu:hover {
   @include shadow-box-over;
 
@@ -219,9 +215,9 @@
 }
 
 @include respond(desktop) {
-  .card__restaurant:active,
+  .restaurant__card:active,
   .card__menu:active,
-  .card__restaurant:hover,
+  .restaurant__card:hover,
   .card__menu:hover {
     @include shadow-box-over;
 

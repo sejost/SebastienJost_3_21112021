@@ -8,6 +8,7 @@
 
 .icon {
   font-size: map-get($font-size, "medlarge");
+  width: 2rem;
 }
 
 .icon__return {
@@ -26,29 +27,24 @@
 }
 
 .icon__instruction {
-  padding: 0 2rem;
+  //padding: 0 2rem;
 }
 
-.icon__footer {
-  width: 2rem;
-}
-
-.icon__restaurant {
+.icon__heart {
   font-size: map-get($font-size, "large");
-}
+  &--empty {
+    position: absolute;
+    opacity: 1;
+  }
 
-.icon__restaurant--empty {
-  position: absolute;
-  opacity: 1;
-}
-
-.icon__restaurant--filled {
-  background-image: linear-gradient(
-    to bottom left,
-    $colour-reddishMagenta,
-    $colour-mediumPurple
-  );
-  background-clip: text;
-  color: transparent;
-  opacity: 0;
+  &--filled {
+    background-image: linear-gradient(
+      to bottom left,
+      $colour-reddishMagenta,
+      $colour-mediumPurple
+    );
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+  }
 }
