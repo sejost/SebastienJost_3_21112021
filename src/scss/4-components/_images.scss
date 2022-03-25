@@ -6,10 +6,6 @@ img {
   object-fit: cover;
 }
 
-.link-img {
-  width: 100%;
-}
-
 .bg__img {
   height: 20rem;
   @include respond(med-desktop) {

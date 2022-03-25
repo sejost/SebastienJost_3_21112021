@@ -56,7 +56,7 @@
 }
 
 /* Details of Menu Card, only used on the main page */
-.card__details {
+.card__caption {
   height: 100%;
   width: 100%;
   padding: 0rem 1rem;
@@ -113,7 +113,6 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-
   //restaurant__card responsive part
   @include respond(tablet) {
     width: 45%;
@@ -128,18 +127,22 @@
     width: 23%;
   }
   @include animation-delay-loop(4, 2.5s);
-}
 
-.card__img {
-  height: 10rem;
-  width: 100%;
-
-  //card__img responsive part
-  @include respond(desktop) {
-    height: 15rem;
+  a {
+    width: 100%;
   }
-  @include respond(med-desktop) {
-    height: 20rem;
+
+  img {
+    height: 10rem;
+    width: 100%;
+
+    //img responsive part
+    @include respond(desktop) {
+      height: 15rem;
+    }
+    @include respond(med-desktop) {
+      height: 20rem;
+    }
   }
 }
 
@@ -183,13 +186,13 @@
 }
 
 .card__menu--visible {
-  @extend .card__details;
+  @extend .card__caption;
   min-width: 0%;
   max-width: 100%;
 }
 
 .card__menu--overlay {
-  @extend .card__details;
+  @extend .card__caption;
   animation: displayCheck 600ms ease-in-out both;
   background: $colour-greenishCyan;
   color: white;
