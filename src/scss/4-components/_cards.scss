@@ -26,13 +26,13 @@
 }
 
 /* This part has been added to allow the subdivision of restaurant menu cards */
-.subcontainer-cards {
+.cards-subcontainer {
   width: 100%;
   padding: 0.5rem 0;
 }
 
-//.subcontainer-cards responsive part
-.subcontainer-cards__menu {
+//.cards-subcontainer responsive part
+.cards-subcontainer__menu {
   @include respond(tablet) {
     width: 70%;
   }
