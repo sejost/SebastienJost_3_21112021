@@ -4,19 +4,19 @@
 @use "../2-utils/" as *;
 
 /* Global containers of cards */
-.container-cards {
+.cards-container {
   padding: 1rem 0;
   justify-content: space-around;
   display: flex;
   flex-direction: column;
 }
 
-.container-cards__instruction,
-.container-cards__restaurant,
-.container-cards__menu {
+.cards-container__instruction,
+.cards-container__restaurant,
+.cards-container__menu {
   align-items: center;
 
-  //.container-cards responsive part
+  //.cards-container responsive part
   @include respond(tablet) {
     flex-direction: row;
     flex-wrap: wrap;
