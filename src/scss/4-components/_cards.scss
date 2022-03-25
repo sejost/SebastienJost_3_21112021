@@ -101,7 +101,7 @@
 }
 
 .restaurant__card,
-.card__menu {
+.card__course {
   background: white;
 }
 
@@ -156,26 +156,26 @@
   top: 1rem;
 }
 
-.card__menu {
+.card__course {
   @include animation-delay-loop(4, 2.5s);
   cursor: pointer;
   height: 5rem;
   line-height: 1.5rem;
 
-  .menu__description {
+  .course__description {
     max-width: 80%;
     display: flex;
     flex-direction: column;
   }
 
-  .menu__description > h3,
-  .menu__description > p {
+  .course__description > h3,
+  .course__description > p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .menu__price {
+  .course__price {
     font-weight: map-get($font-weight, bold);
     position: absolute;
     right: 1rem;
@@ -183,13 +183,13 @@
   }
 }
 
-.card__menu--visible {
+.card__course--visible {
   @extend .card__caption;
   min-width: 0%;
   max-width: 100%;
 }
 
-.card__menu--overlay {
+.card__course--overlay {
   @extend .card__caption;
   animation: displayCheck 600ms ease-in-out both;
   background: $colour-greenishCyan;
@@ -205,24 +205,24 @@
 }
 
 .restaurant__card:active,
-.card__menu:active,
+.card__course:active,
 .restaurant__card:hover,
-.card__menu:hover {
+.card__course:hover {
   @include shadow-box-over;
 
-  .card__menu--overlay {
+  .card__course--overlay {
     display: flex;
   }
 }
 
 @include respond(desktop) {
   .restaurant__card:active,
-  .card__menu:active,
+  .card__course:active,
   .restaurant__card:hover,
-  .card__menu:hover {
+  .card__course:hover {
     @include shadow-box-over;
 
-    .card__menu--overlay {
+    .card__course--overlay {
       display: flex;
     }
   }
