@@ -1,10 +1,11 @@
 /* Footer ohmyfood */
 /* Mobile First */
-@use "../1-base/" as *;
-@use "../2-utils/" as *;
-@use "_sections.scss/" as *;
+@use "../1-base" as *;
+@use "../2-utils" as *;
+@use "_sections.scss" as *;
 
 footer {
+  @extend %bg__darkgrey;
   padding: 2rem 1.125rem;
 
   @include respond(tablet) {

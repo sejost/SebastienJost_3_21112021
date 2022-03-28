@@ -24,6 +24,14 @@
   }
 }
 
+fieldset:nth-child(1) {
+  @extend %bg__darkgrey--fo1;
+}
+
+fieldset:nth-child(2) {
+  @extend %bg__darkgrey--fo2;
+}
+
 input {
   border: none;
   background: transparent;

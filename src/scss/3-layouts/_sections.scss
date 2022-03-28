@@ -20,3 +20,16 @@ section {
   margin-top: -2rem;
   position: relative;
 }
+
+.operation__card:nth-child(1),
+.operation__card:nth-child(2) {
+  @extend %bg__darkgrey--fo2;
+}
+
+.operation__card:nth-child(3) {
+  @extend %bg--active;
+}
+
+.restaurants {
+  @extend %bg__darkgrey--fo2;
+}
