@@ -6,7 +6,7 @@ img {
   object-fit: cover;
 }
 
-.bg__img {
+.restaurant__background {
   height: 20rem;
   @include respond(med-desktop) {
     height: 25rem;

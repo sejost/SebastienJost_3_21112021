@@ -1,241 +1,241 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- 
-    Head Part Including : 
-    - Google Fonts
+    <!-- 
+        Head Part Including : 
+        - Google Fonts
 
-    - Normalyse.css that makes browsers render all elements more consistently and in line with modern standards 
-    - Styles.css/scss that makes the style of the page 
-    - Font Awesom Icons
-    - Favicons
-
-
-    Index - Welcome Page
--->
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Le délice des sens</title>
-    <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="dist/css/prefixed/style.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="dist/css/style.css" media="screen" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-</head>
-
-<body>
-
-    <!-- Spin Loader -->
-    <div class="loader">
-        <div class="loader__arc loader__arc--up"></div>
-        <div class="loader__arc loader__arc--down"></div>
-    </div>
-
-    <!-- Header Part -->
-    <header>
-        <a href="index.html"><i class="icon icon__return fas fa-arrow-left"></i></a>
-        <a href="index.html"><h1 class="title">ohmyfood</h1></a>
-    </header>
+        - Normalyse.css that makes browsers render all elements more consistently and in line with modern standards 
+        - Styles.css/scss that makes the style of the page 
+        - Font Awesom Icons
+        - Favicons
 
 
-    <!-- Head Part Image-->
-    <img class="bg__img" src="dist/images/images/restaurants/ledelicedessens.jpg" alt="Le délice des sens">
+        Index - Welcome Page
+    -->
 
-    <!-- List Menu -->
-    <section class="menu bg__lightgrey">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu - Le délice des sens</title>
+        <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="dist/css/prefixed/style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="dist/css/style.css" media="screen" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    </head>
+
+    <body>
+
+        <!-- Spin Loader -->
+        <div class="loader">
+            <div class="loader__arc loader__arc--up"></div>
+            <div class="loader__arc loader__arc--down"></div>
+        </div>
+
+        <!-- Header Part -->
+        <header>
+            <a href="index.html"><i class="icon icon__return fas fa-arrow-left"></i></a>
+            <a href="index.html"><h1 class="title">ohmyfood</h1></a>
+        </header>
+
+
+        <!-- Head Part Image-->
+        <img class="restaurant__background" src="dist/images/images/restaurants/ledelicedessens.jpg" alt="Le délice des sens">
+
+        <!-- List Menu -->
+        <section class="menu">
+            
+            <div class="menu__header">
+                <h2 class="title">Le délice des sens</h2>
+                <span class="icons-container ">
+                    <i class="icon icon__heart icon__heart--empty far fa-heart"></i>
+                    <i class="icon icon__heart icon__heart--filled fas fa-heart"></i>  
+                </span>
+            </div>
+
+
+            <!-- Container Cards Menu Entrees-->
+            <div class="menu__main">
+
+                <!-- SubContainer Cards Menu Entrees-->
+                <div class="courses">
+                    <div class="courses__header">
+                        <H3>ENTRÉES</H3>
+                        <div class="underline"></div>
+                    </div>
+
+                    <!-- First Entree Card -->
+                    <div class="card card__course card__course--1">
+                        <div class="card__course--visible">
+                            <div class="course__description">
+                                <h3>Tartare de thon</h3>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <span class="course__price">25€</span>
+                        </div>
+                        <div class="card__course--overlay">
+                            <i class="icon fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <!-- Second Entree Card -->
+                    <div class="card card__course card__course--2">
+                        <div class="card__course--visible">
+                            <div class="course__description">
+                                <h3>Bouchée de homard croustillant</h3>
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <span class="course__price">35€</span>
+                        </div>
+                        <div class="card__course--overlay">
+                            <i class="icon fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <!-- Third Entree Card -->
+                    <div class="card card__course card__course--2">
+                        <div class="card__course--visible">
+                            <div class="course__description">
+                                <h3>Velouté de cèpes</h3>
+                                <p>Aux truffes</p>
+                            </div>
+                            <span class="course__price">20€</span>
+                        </div>
+                        <div class="card__course--overlay">
+                            <i class="icon fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SubContainer Cards Menu Dishes-->
+                <div class="courses">
+                    <div class="courses__header">
+                        <H3>PLATS</H3>
+                        <div class="underline"></div>
+                    </div>
+
+                    <!-- First Dish Card -->
+                    <div class="card card__course card__course--1">
+                        <div class="card__course--visible">
+                            <div class="course__description">
+                                <h3>Poulet rôti aux herbes de Provence </h3>
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <span class="course__price">40€</span>
+                        </div>
+                        <div class="card__course--overlay">
+                            <i class="icon fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <!-- Second Dish Card -->
+                    <div class="card card__course card__course--2">
+                        <div class="card__course--visible">
+                            <div class="course__description">
+                                <h3>Langouste rôtie </h3>
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <span class="course__price">35€</span>
+                        </div>
+                        <div class="card__course--overlay">
+                            <i class="icon fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <!-- Third Dish Card -->
+                    <div class="card card__course card__course--2">
+                        <div class="card__course--visible">
+                            <div class="course__description">
+                                <h3>Côte de boeuf Angus </h3>
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <span class="course__price">44€</span>
+                        </div>
+                        <div class="card__course--overlay">
+                            <i class="icon fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- SubContainer Cards Menu Desserts-->
+                <div class="courses">
+                    <div class="courses__header">
+                        <H3>DESSERTS</H3>
+                        <div class="underline"></div>
+                    </div>
+
+                    <!-- First Dessert Card -->
+                    <div class="card card__course card__course--1">
+                        <div class="card__course--visible">
+                            <div class="course__description">
+                                <h3>Farandole de desserts</h3>
+                                <p>Du chef</p>
+                            </div>
+                            <span class="course__price">18€</span>
+                        </div>
+                        <div class="card__course--overlay">
+                            <i class="icon fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <!-- Second Dessert Card -->
+                    <div class="card card__course card__course--2">
+                        <div class="card__course--visible">
+                            <div class="course__description">
+                                <h3>Crème brulée </h3>
+                                <p>Revisité</p>
+                            </div>
+                            <span class="course__price">22€</span>
+                        </div>
+                        <div class="card__course--overlay">
+                            <i class="icon fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <!-- Third Dessert Card -->
+                    <div class="card card__course card__course--2">
+                        <div class="card__course--visible">
+                            <div class="course__description">
+                                <h3>Tiramisu </h3>
+                                <p>À la noisette</p>
+                            </div>
+                            <span class="course__price">23€</span>
+                        </div>
+                        <div class="card__course--overlay">
+                            <i class="icon fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-buttons"><input class="button button__menu" type="submit" value="Commander" name="order"></div>
+            </div>
+        </section>
+
         
-        <div class="menu__header">
-            <h2 class="title">Le délice des sens</h2>
-            <span class="icons-container ">
-                <i class="icon icon__heart icon__heart--empty far fa-heart"></i>
-                <i class="icon icon__heart icon__heart--filled fas fa-heart"></i>  
-            </span>
-        </div>
 
-
-        <!-- Container Cards Menu Entrees-->
-        <div class="menu__main">
-
-            <!-- SubContainer Cards Menu Entrees-->
-            <div class="courses">
-                <div class="courses__header">
-                    <H3>ENTRÉES</H3>
-                    <div class="underline"></div>
-                </div>
-
-                <!-- First Entree Card -->
-                <div class="card card__course card__course--1">
-                    <div class="card__course--visible">
-                        <div class="course__description">
-                            <h3>Tartare de thon</h3>
-                            <p>Assaisonné au yuzu</p>
-                        </div>
-                        <span class="course__price">25€</span>
-                    </div>
-                    <div class="card__course--overlay">
-                        <i class="icon fas fa-check-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Second Entree Card -->
-                <div class="card card__course card__course--2">
-                    <div class="card__course--visible">
-                        <div class="course__description">
-                            <h3>Bouchée de homard croustillant</h3>
-                            <p>Et sa farandole de petits légumes</p>
-                        </div>
-                        <span class="course__price">35€</span>
-                    </div>
-                    <div class="card__course--overlay">
-                        <i class="icon fas fa-check-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Third Entree Card -->
-                <div class="card card__course card__course--2">
-                    <div class="card__course--visible">
-                        <div class="course__description">
-                            <h3>Velouté de cèpes</h3>
-                            <p>Aux truffes</p>
-                        </div>
-                        <span class="course__price">20€</span>
-                    </div>
-                    <div class="card__course--overlay">
-                        <i class="icon fas fa-check-circle"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SubContainer Cards Menu Dishes-->
-            <div class="courses">
-                <div class="courses__header">
-                    <H3>PLATS</H3>
-                    <div class="underline"></div>
-                </div>
-
-                <!-- First Dish Card -->
-                <div class="card card__course card__course--1">
-                    <div class="card__course--visible">
-                        <div class="course__description">
-                            <h3>Poulet rôti aux herbes de Provence </h3>
-                            <p>Et sa crème de truffe</p>
-                        </div>
-                        <span class="course__price">40€</span>
-                    </div>
-                    <div class="card__course--overlay">
-                        <i class="icon fas fa-check-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Second Dish Card -->
-                <div class="card card__course card__course--2">
-                    <div class="card__course--visible">
-                        <div class="course__description">
-                            <h3>Langouste rôtie </h3>
-                            <p>Et ses légumes de saison</p>
-                        </div>
-                        <span class="course__price">35€</span>
-                    </div>
-                    <div class="card__course--overlay">
-                        <i class="icon fas fa-check-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Third Dish Card -->
-                <div class="card card__course card__course--2">
-                    <div class="card__course--visible">
-                        <div class="course__description">
-                            <h3>Côte de boeuf Angus </h3>
-                            <p>Et sa purée de panais</p>
-                        </div>
-                        <span class="course__price">44€</span>
-                    </div>
-                    <div class="card__course--overlay">
-                        <i class="icon fas fa-check-circle"></i>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- SubContainer Cards Menu Desserts-->
-            <div class="courses">
-                <div class="courses__header">
-                    <H3>DESSERTS</H3>
-                    <div class="underline"></div>
-                </div>
-
-                <!-- First Dessert Card -->
-                <div class="card card__course card__course--1">
-                    <div class="card__course--visible">
-                        <div class="course__description">
-                            <h3>Farandole de desserts</h3>
-                            <p>Du chef</p>
-                        </div>
-                        <span class="course__price">18€</span>
-                    </div>
-                    <div class="card__course--overlay">
-                        <i class="icon fas fa-check-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Second Dessert Card -->
-                <div class="card card__course card__course--2">
-                    <div class="card__course--visible">
-                        <div class="course__description">
-                            <h3>Crème brulée </h3>
-                            <p>Revisité</p>
-                        </div>
-                        <span class="course__price">22€</span>
-                    </div>
-                    <div class="card__course--overlay">
-                        <i class="icon fas fa-check-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Third Dessert Card -->
-                <div class="card card__course card__course--2">
-                    <div class="card__course--visible">
-                        <div class="course__description">
-                            <h3>Tiramisu </h3>
-                            <p>À la noisette</p>
-                        </div>
-                        <span class="course__price">23€</span>
-                    </div>
-                    <div class="card__course--overlay">
-                        <i class="icon fas fa-check-circle"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="container-buttons"><input class="button button__menu" type="submit" value="Commander" name="order"></div>
-        </div>
-    </section>
-
-    
-
-    <!-- Footer  -->
-    <footer>
-        <a href="#"><h4 class="title">ohmyfood</h4></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#"><i class="icon fas fa-utensils"></i>Proposer un restaurant</a></div>
-                </li>
-                <li>
-                    <a href="#"><i class="icon fas fa-hands-helping"></i>Devenir partenaire</a></div>
-                </li>
-                <li>
-                    <a href="#">Mentions légales</a></div>
-                </li>
-                <li>
-                    <a href="mailto:contact-france@ohmyfood.com">Contact</a></div>
-                </li>
-            </ul>
-        </nav>
-    </footer>
-</body>
+        <!-- Footer  -->
+        <footer>
+            <a href="#"><h4 class="title">ohmyfood</h4></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"><i class="icon fas fa-utensils"></i>Proposer un restaurant</a></div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon fas fa-hands-helping"></i>Devenir partenaire</a></div>
+                    </li>
+                    <li>
+                        <a href="#">Mentions légales</a></div>
+                    </li>
+                    <li>
+                        <a href="mailto:contact-france@ohmyfood.com">Contact</a></div>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
 
 </html>

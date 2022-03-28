@@ -2,7 +2,7 @@
 This file defines all placeholders and extension class */
 @use "vars" as *;
 
-/* PlaceHolders ofr the radius parts */
+/* PlaceHolders of the radius parts */
 %border-radius0 {
   border-radius: 0.5rem;
 }
@@ -19,54 +19,28 @@ This file defines all placeholders and extension class */
   border-radius: 2rem;
 }
 
-/* Extend class for the background colours part */
+/* PlaceHolders for the background colours part */
 
 %bg__darkgrey {
-  background: $colour-darkGrey;
+  background-color: $colour-darkGrey;
 }
 
 %bg__darkgrey--fo1 {
-  background: fade-out($colour-darkGrey, 0.8);
+  background-color: fade-out($colour-darkGrey, 0.8);
 }
 
 %bg__darkgrey--fo2 {
-  background: fade-out($colour-darkGrey, 0.92);
+  background-color: fade-out($colour-darkGrey, 0.92);
 }
 
 %bg__drakgrey--fo3 {
-  background: fade-out($colour-darkGrey, 0.96);
+  background-color: fade-out($colour-darkGrey, 0.96);
 }
 
 %bg__lightgrey {
-  background: $colour-lightGrey;
+  background-color: $colour-lightGrey;
 }
 
 %bg--active {
-  background: fade-out($colour-mediumPurple, 0.82);
+  background-color: fade-out($colour-mediumPurple, 0.82);
 }
-
-/*
-.bg__darkgrey {
-  background: $colour-darkGrey;
-}
-
-.bg__darkgrey--fo1 {
-  background: fade-out($colour-darkGrey, 0.8);
-}
-
-.bg__darkgrey--fo2 {
-  background: fade-out($colour-darkGrey, 0.92);
-}
-
-.bg__drakgrey--fo3 {
-  background: fade-out($colour-darkGrey, 0.96);
-}
-
-.bg__lightgrey {
-  background: $colour-lightGrey;
-}
-
-.bg--active {
-  background: fade-out($colour-mediumPurple, 0.82);
-}
-*/

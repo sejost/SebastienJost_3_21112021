@@ -3,6 +3,10 @@
 @use "../1-base/" as *;
 @use "../2-utils/" as *;
 
+.menu {
+  @extend %bg__lightgrey;
+}
+
 .menu__header {
   padding: 0 2rem 2rem 0;
   display: flex;
